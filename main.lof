@@ -1,0 +1,24 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {american}{}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.1}{\ignorespaces Overview about the main parts of a Neuron \cite {wikiNeuron}\relax }}{2}{figure.caption.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.2}{\ignorespaces Schemata of a Synapse \cite {wikiSyn}\relax }}{3}{figure.caption.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.3}{\ignorespaces Schemata of McCulloch-Pitts-Model}}{4}{figure.caption.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.4}{\ignorespaces Plot of a logistic function\relax }}{5}{figure.caption.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.5}{\ignorespaces Plot of the STDP learning window\relax }}{8}{figure.caption.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.6}{\ignorespaces In his paper Legenstein described the R-Stdp Mechanism \cite {legenstein2008learning}:\newline (A) Eligibility function $f_c(t)$, which scales the contribution of a pre/post spike pair (with the second spike at time 0) to the eligibility trace $c(t)$ at time $t$. (B) Contribution of a pre-before-post spike pair (in red) and a post-before-pre spike pair (in green) to the eligibility trace $c(t)$ (in black), which is the sum of the red and green curves.\relax }}{10}{figure.caption.8}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.7}{\ignorespaces Rotating Dot stimulus visualised over time and additional Dvs pictures\relax }}{12}{figure.caption.9}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {\relax 1.8}{\ignorespaces Slide of Presentation by Jiang showing the different gaits of the robot\cite {snakeRobo}\relax }}{13}{figure.caption.10}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
