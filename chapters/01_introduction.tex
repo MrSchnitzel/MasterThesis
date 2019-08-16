@@ -2,88 +2,11 @@
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
 \chapter{Introduction}\label{chapter:introduction}
-
-\section{Section}
-Citation test~\parencite{latex}.
-
-\subsection{Subsection}
-
-See~\autoref{tab:sample}, \autoref{fig:sample-drawing}, \autoref{fig:sample-plot}, \autoref{fig:sample-listing}.
-\begin{table}[htpb]
-  \caption[Example table]{An example for a simple table.}\label{tab:sample}
-  \centering
-  \begin{tabular}{l l l l}
-    \toprule
-      A & B & C & D \\
-    \midrule
-      1 & 2 & 1 & 2 \\
-      2 & 3 & 2 & 3 \\
-    \bottomrule
-  \end{tabular}
-\end{table}
-
-\begin{figure}[htpb]
-  \centering
-  % This should probably go into a file in figures/
-  \begin{tikzpicture}[node distance=3cm]
-    \node (R0) {$R_1$};
-    \node (R1) [right of=R0] {$R_2$};
-    \node (R2) [below of=R1] {$R_4$};
-    \node (R3) [below of=R0] {$R_3$};
-    \node (R4) [right of=R1] {$R_5$};
-
-    \path[every node]
-      (R0) edge (R1)
-      (R0) edge (R3)
-      (R3) edge (R2)
-      (R2) edge (R1)
-      (R1) edge (R4);
-  \end{tikzpicture}
-  \caption[Example drawing]{An example for a simple drawing.}\label{fig:sample-drawing}
-\end{figure}
-
-\begin{figure}[htpb]
-  \centering
-
-  \pgfplotstableset{col sep=&, row sep=\\}
-  % This should probably go into a file in data/
-  \pgfplotstableread{
-    a & b    \\
-    1 & 1000 \\
-    2 & 1500 \\
-    3 & 1600 \\
-  }\exampleA
-  \pgfplotstableread{
-    a & b    \\
-    1 & 1200 \\
-    2 & 800 \\
-    3 & 1400 \\
-  }\exampleB
-  % This should probably go into a file in figures/
-  \begin{tikzpicture}
-    \begin{axis}[
-        ymin=0,
-        legend style={legend pos=south east},
-        grid,
-        thick,
-        ylabel=Y,
-        xlabel=X
-      ]
-      \addplot table[x=a, y=b]{\exampleA};
-      \addlegendentry{Example A};
-      \addplot table[x=a, y=b]{\exampleB};
-      \addlegendentry{Example B};
-    \end{axis}
-  \end{tikzpicture}
-  \caption[Example plot]{An example for a simple plot.}\label{fig:sample-plot}
-\end{figure}
-
-\begin{figure}[htpb]
-  \centering
-  \begin{tabular}{c}
-  \begin{lstlisting}[language=SQL]
-    SELECT * FROM tbl WHERE tbl.str = "str"
-  \end{lstlisting}
-  \end{tabular}
-  \caption[Example listing]{An example for a source code listing.}\label{fig:sample-listing}
-\end{figure}
+The field of robotics and artificial inteligence is a fast growing and evolving sector. 
+A big problem still to solve is autonomus navigation as it requires realtime decision making. In the recent years new technologies with promising features to achive better autonomus lokomotion entered the market. One of these is the dynamic vision sensor. For taking pictures usless but it's special desigen make it really intersting for robot/computer vision. By sending only updates about changes in pixels in form of events it greatly reduces the bandwith needed for the connection as well as processing time and memorie space. The idea for this technology was derived from organic eyes which also transmitt changes rather then the whole picture at a time.
+\newline
+Another example where a new technology uses a model known from biological resarch are artificial neural networks. This research field had from the very beginning two task. On the one hand neuroscientists used artificial neural network as model to learn more about biological neurons. On the other hand the capabilities of neurnal networks in solving complex task is demonstrated by all living beeings every day which makes it interesting for computerscientists to also resarch in this direction.
+The aim of this thesis is to achive autonomus locomotion controlled by a spiking neural network for a snake like robot. In simpler words the robot should learn to follow an object it detects through a DVS Sensor. The learning in this task utilises a reward signla to adjust the network weights. This is realized by using R-STDP synapses receiving the reward signal and changeing their weight correspondingly. In this process not only the reward but also the activity of the synapse in the past is accounted for the weight change.
+The development and the theroetical backround of theses topics is described in the first part of this thesis. At the beginning the biological backround is discussed, followed up by a description of the differnt generation of artificial neural networks using the knowledge gained from coopeartive research with neuroscientists. After that the dynamic vision sensor is explained in more detail as well as the robot and the simulation platform used for the experiments. The next chapter describes how the experiments are set up, what parameters are used and how different parts of the simulation interact.
+In the following chapter, the networks traind, as well as the results of the training are 
+discribed. This is then followed up by testing the trained networks and evaluating the results.

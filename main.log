@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  16 AUG 2019 05:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  16 AUG 2019 08:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1288,26 +1288,31 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 37.
 
 LaTeX Font Info:    Font shape `T1/pplx/m/sl' in size <10.95> not available
 (Font)              Font shape `T1/pplx/m/it' tried instead on input line 40.
- [7] (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/02_TheoreticalBackground.tex
+ [7] (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/01_introduction.tex
 chapter 1.
+) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/02_TheoreticalBackground.tex [1
+
+
+
+]
+chapter 2.
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 6.
-<figures/Neuron.png, id=118, 1228.59pt x 709.65125pt>
+<figures/Neuron.png, id=126, 1228.59pt x 709.65125pt>
 File: figures/Neuron.png Graphic file (type png)
 <use figures/Neuron.png>
 Package pdftex.def Info: figures/Neuron.png  used on input line 12.
 (pdftex.def)             Requested size: 418.25555pt x 241.59225pt.
-<figures/synapse.png, id=123, 1121.18875pt x 779.91376pt>
+<figures/synapse.png, id=131, 1121.18875pt x 779.91376pt>
 File: figures/synapse.png Graphic file (type png)
 <use figures/synapse.png>
 Package pdftex.def Info: figures/synapse.png  used on input line 22.
 (pdftex.def)             Requested size: 280.2965pt x 194.97797pt.
-[1
+[2
 
 
-
-] [2 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/Neuron.png>]
-<figures/McPSchema.pdf, id=144, 567.07857pt x 262.0992pt>
+] [3 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/Neuron.png>]
+<figures/McPSchema.pdf, id=152, 567.07857pt x 262.0992pt>
 File: figures/McPSchema.pdf Graphic file (type pdf)
 <use figures/McPSchema.pdf>
 Package pdftex.def Info: figures/McPSchema.pdf  used on input line 33.
@@ -1317,262 +1322,35 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--40
 
  []
 
-[3 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/synapse.png>]
-<figures/logisticFunc.png, id=164, 1388.18625pt x 394.47375pt>
+[4 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/synapse.png>]
+<figures/logisticFunc.png, id=172, 1388.18625pt x 394.47375pt>
 File: figures/logisticFunc.png Graphic file (type png)
 <use figures/logisticFunc.png>
 Package pdftex.def Info: figures/logisticFunc.png  used on input line 67.
 (pdftex.def)             Requested size: 418.25555pt x 118.85466pt.
- [4 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/McPSchema.pdf
+ [5 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/McPSchema.pdf
 
 pdfTeX warning: pdflatex (file /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/McPSchema.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
->] [5 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/logisticFunc.png>] [6]
+>] [6 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/logisticFunc.png>] [7]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
 (Font)              Font shape `T1/pplx/b/n' tried instead on input line 135.
- [7]
-<figures/STDPcurve.png, id=233, 834.11626pt x 357.335pt>
+ [8]
+<figures/STDPcurve.png, id=241, 834.11626pt x 357.335pt>
 File: figures/STDPcurve.png Graphic file (type png)
 <use figures/STDPcurve.png>
 Package pdftex.def Info: figures/STDPcurve.png  used on input line 168.
 (pdftex.def)             Requested size: 418.25555pt x 179.17958pt.
- [8 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/STDPcurve.png>]
-<figures/rstdp.png, id=244, 94.51057pt x 96.02805pt>
+ [9 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/STDPcurve.png>]
+<figures/rstdp.png, id=252, 94.51057pt x 96.02805pt>
 File: figures/rstdp.png Graphic file (type png)
 <use figures/rstdp.png>
 Package pdftex.def Info: figures/rstdp.png  used on input line 196.
 (pdftex.def)             Requested size: 283.53099pt x 288.0834pt.
- [9] [10 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/rstdp.png>]
-<figures/rotatingDot.png, id=262, 1034.86626pt x 343.2825pt>
+ [10] [11 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/rstdp.png>]
+<figures/rotatingDot.png, id=271, 1034.86626pt x 343.2825pt>
 File: figures/rotatingDot.png Graphic file (type png)
 <use figures/rotatingDot.png>
 Package pdftex.def Info: figures/rotatingDot.png  used on input line 219.
 (pdftex.def)             Requested size: 418.25555pt x 138.74054pt.
-<figures/rotatingDotAdd.png, id=263, 1025.8325pt x 342.27875pt>
-File: figures/rotatingDotAdd.png Graphic file (type png)
-<use figures/rotatingDotAdd.png>
-Package pdftex.def Info: figures/rotatingDotAdd.png  used on input line 221.
-(pdftex.def)             Requested size: 418.25555pt x 139.55699pt.
-<figures/roboGates.png, id=266, 1357.07pt x 764.8575pt>
-File: figures/roboGates.png Graphic file (type png)
-<use figures/roboGates.png>
-Package pdftex.def Info: figures/roboGates.png  used on input line 233.
-(pdftex.def)             Requested size: 418.25555pt x 235.72621pt.
- [11] [12 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/rotatingDot.png> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/rotatingDotAdd.png>]) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/03_Methologie.tex [13 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/roboGates.png>] [14]
-chapter 2.
-<figures/startingPosition.png, id=298, 964.60374pt x 603.25375pt>
-File: figures/startingPosition.png Graphic file (type png)
-<use figures/startingPosition.png>
-Package pdftex.def Info: figures/startingPosition.png  used on input line 12.
-(pdftex.def)             Requested size: 418.25555pt x 261.5664pt.
-<figures/realDvs.png, id=302, 823.075pt x 560.0925pt>
-File: figures/realDvs.png Graphic file (type png)
-<use figures/realDvs.png>
-Package pdftex.def Info: figures/realDvs.png  used on input line 26.
-(pdftex.def)             Requested size: 418.25555pt x 284.61783pt.
-[15
-
-
-] [16 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/startingPosition.png>] [17 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/realDvs.png>]
-<figures/DvsView.png, id=324, 1406.25375pt x 834.11626pt>
-File: figures/DvsView.png Graphic file (type png)
-<use figures/DvsView.png>
-Package pdftex.def Info: figures/DvsView.png  used on input line 34.
-(pdftex.def)             Requested size: 418.25555pt x 248.08585pt.
- [18 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/DvsView.png>]
-<figures/roboAngle.png, id=332, 684.5575pt x 309.155pt>
-File: figures/roboAngle.png Graphic file (type png)
-<use figures/roboAngle.png>
-Package pdftex.def Info: figures/roboAngle.png  used on input line 52.
-(pdftex.def)             Requested size: 418.25555pt x 188.89561pt.
- [19 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/roboAngle.png>] [20]
-<figures/MSNNfu.png, id=356, 814.04124pt x 543.02875pt>
-File: figures/MSNNfu.png Graphic file (type png)
-<use figures/MSNNfu.png>
-Package pdftex.def Info: figures/MSNNfu.png  used on input line 108.
-(pdftex.def)             Requested size: 418.25555pt x 279.00418pt.
-) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/04_Training.tex [21] [22 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/MSNNfu.png>]
-chapter 3.
-
-LaTeX Warning: Reference `fig:simpleNetwork' on page 23 undefined on input line 7.
-
-[23
-
-
-] [24]
-
-LaTeX Warning: Reference `fig:ballMove' on page 25 undefined on input line 142.
-
-<figures/plots/midWBase1.pdf, id=396, 2233.34375pt x 1229.59375pt>
-File: figures/plots/midWBase1.pdf Graphic file (type pdf)
-<use figures/plots/midWBase1.pdf>
-Package pdftex.def Info: figures/plots/midWBase1.pdf  used on input line 179.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-[25] [26]
-<figures/plots/endWBase1.pdf, id=407, 2233.34375pt x 1229.59375pt>
-File: figures/plots/endWBase1.pdf Graphic file (type pdf)
-<use figures/plots/endWBase1.pdf>
-Package pdftex.def Info: figures/plots/endWBase1.pdf  used on input line 187.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/dopeBase1.pdf, id=412, 2233.34375pt x 1229.59375pt>
-File: figures/plots/dopeBase1.pdf Graphic file (type pdf)
-<use figures/plots/dopeBase1.pdf>
-Package pdftex.def Info: figures/plots/dopeBase1.pdf  used on input line 195.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/angleBase1.pdf, id=413, 2326.6925pt x 1281.78876pt>
-File: figures/plots/angleBase1.pdf Graphic file (type pdf)
-<use figures/plots/angleBase1.pdf>
-Package pdftex.def Info: figures/plots/angleBase1.pdf  used on input line 201.
-(pdftex.def)             Requested size: 418.25555pt x 230.41864pt.
-<figures/plots/moveEndBase1.pdf, id=414, 2233.34375pt x 1229.59375pt>
-File: figures/plots/moveEndBase1.pdf Graphic file (type pdf)
-<use figures/plots/moveEndBase1.pdf>
-Package pdftex.def Info: figures/plots/moveEndBase1.pdf  used on input line 207.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/WBase1.pdf, id=415, 2233.34375pt x 1229.59375pt>
-File: figures/plots/WBase1.pdf Graphic file (type pdf)
-<use figures/plots/WBase1.pdf>
-Package pdftex.def Info: figures/plots/WBase1.pdf  used on input line 213.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
- [27 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/midWBase1.pdf>] [28 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/endWBase1.pdf> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/dopeBase1.pdf>] [29 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/angleBase1.pdf> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/moveEndBase1.pdf>] [30 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/WBase1.pdf>] [31]
-<figures/plots/perfdvsOnlyB2.pdf, id=494, 2233.34375pt x 1229.59375pt>
-File: figures/plots/perfdvsOnlyB2.pdf Graphic file (type pdf)
-<use figures/plots/perfdvsOnlyB2.pdf>
-Package pdftex.def Info: figures/plots/perfdvsOnlyB2.pdf  used on input line 272.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/wblWbrB2Dvs.pdf, id=495, 2233.34375pt x 1229.59375pt>
-File: figures/plots/wblWbrB2Dvs.pdf Graphic file (type pdf)
-<use figures/plots/wblWbrB2Dvs.pdf>
-Package pdftex.def Info: figures/plots/wblWbrB2Dvs.pdf  used on input line 278.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
- [32 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/perfdvsOnlyB2.pdf>]
-<figures/plots/baADistB2JointH.pdf, id=512, 2233.34375pt x 1229.59375pt>
-File: figures/plots/baADistB2JointH.pdf Graphic file (type pdf)
-<use figures/plots/baADistB2JointH.pdf>
-Package pdftex.def Info: figures/plots/baADistB2JointH.pdf  used on input line 288.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/baADistB2DvsH.pdf, id=513, 2233.34375pt x 1229.59375pt>
-File: figures/plots/baADistB2DvsH.pdf Graphic file (type pdf)
-<use figures/plots/baADistB2DvsH.pdf>
-Package pdftex.def Info: figures/plots/baADistB2DvsH.pdf  used on input line 294.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-
-
-LaTeX Warning: Reference `fig:M1netTop' on page 33 undefined on input line 303.
-
-[33 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/wblWbrB2Dvs.pdf>] [34 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2JointH.pdf> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2DvsH.pdf>]
-<figures/plots/M1Wb.pdf, id=547, 2233.34375pt x 1229.59375pt>
-File: figures/plots/M1Wb.pdf Graphic file (type pdf)
-<use figures/plots/M1Wb.pdf>
-Package pdftex.def Info: figures/plots/M1Wb.pdf  used on input line 359.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/M1baADist.pdf, id=549, 2233.34375pt x 1229.59375pt>
-File: figures/plots/M1baADist.pdf Graphic file (type pdf)
-<use figures/plots/M1baADist.pdf>
-Package pdftex.def Info: figures/plots/M1baADist.pdf  used on input line 366.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-
-
-LaTeX Warning: Reference `fig:M2netTop' on page 35 undefined on input line 371.
-
-[35] [36] [37 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1Wb.pdf> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1baADist.pdf>]
-<figures/plots/baADistMS.pdf, id=583, 2233.34375pt x 1229.59375pt>
-File: figures/plots/baADistMS.pdf Graphic file (type pdf)
-<use figures/plots/baADistMS.pdf>
-Package pdftex.def Info: figures/plots/baADistMS.pdf  used on input line 383.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/05_Testing.tex [38 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistMS.pdf>]
-chapter 4.
-
-LaTeX Warning: Reference `fig:testPath' on page 39 undefined on input line 2.
-
-<figures/plots/B1_A.pdf, id=598, 2326.6925pt x 1281.78876pt>
-File: figures/plots/B1_A.pdf Graphic file (type pdf)
-<use figures/plots/B1_A.pdf>
-Package pdftex.def Info: figures/plots/B1_A.pdf  used on input line 9.
-(pdftex.def)             Requested size: 418.25555pt x 230.41864pt.
-<figures/plots/M1_perf.png, id=600, 1675.2186pt x 922.8879pt>
-File: figures/plots/M1_perf.png Graphic file (type png)
-<use figures/plots/M1_perf.png>
-Package pdftex.def Info: figures/plots/M1_perf.png  used on input line 16.
-(pdftex.def)             Requested size: 418.25555pt x 230.4116pt.
-<figures/plots/M2-baADist.png, id=602, 1675.2186pt x 922.8879pt>
-File: figures/plots/M2-baADist.png Graphic file (type png)
-<use figures/plots/M2-baADist.png>
-Package pdftex.def Info: figures/plots/M2-baADist.png  used on input line 24.
-(pdftex.def)             Requested size: 418.25555pt x 230.4116pt.
-[39
-
-
- </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/B1_A.pdf>]) [40 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1_perf.png>] [41 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M2-baADist.png>]
-Package tocbasic Info: character protrusion at lof deactivated on input line 53.
- (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.lof [42
-
-
-])
-\tf@lof=\write7
-\openout7 = `main.lof'.
-
- [43]
-Package tocbasic Info: character protrusion at lot deactivated on input line 54.
- (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.lot)
-\tf@lot=\write8
-\openout8 = `main.lot'.
-
- [44
-
-
-]
-chapter without number
-Package microtype Info: Character `029' is missing
-(microtype)             in font `T1/pplx/m/sc/10.95'.
-(microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 56.
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Overfull \hbox (4.63899pt too wide) in paragraph at lines 56--56
-[]\T1/pplx/m/n/10.95 (-20) T. H. Bul-lock. ^^P  Neu-ron Doc-trine and Elec-tro-phys-i-ol-ogy.^^Q In: \T1/pplx/m/it/10.95 (-20) Sci-ence \T1/pplx/m/n/10.95 (-20) 129.3355
- []
-
-[45
-
-
-]
-No complaints by nag.
-[46]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
- (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
-Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-
-
-LaTeX Warning: There were undefined references.
-
-Package logreq Info: Writing requests to 'main.run.xml'.
-\openout1 = `main.run.xml'.
-
- ) 
-Here is how much of TeX's memory you used:
- 51711 strings out of 492616
- 1134638 string characters out of 6129482
- 1818573 words of memory out of 5000000
- 54385 multiletter control sequences out of 15000+600000
- 595731 words of font info for 304 fonts, out of 8000000 for 9000
- 1143 hyphenation exceptions out of 8191
- 81i,13n,136p,9166b,2906s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.pdf" (54 pages, 10024592 bytes).
-PDF statistics:
- 901 PDF objects out of 1000 (max. 8388607)
- 752 compressed objects within 8 object streams
- 180 named destinations out of 1000 (max. 500000)
- 35779 words of extra memory for PDF output out of 35830 (max. 10000000)
-
+<figures/rotatingDotAdd.png, id=272, 1025.8325pt x 342.27875pt>
+File: figures/rotatingDotAdd.png Graphic file (type 

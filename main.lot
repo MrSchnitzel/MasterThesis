@@ -11,23 +11,27 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.1}{\ignorespaces Parameters Parrot Neuron}}{23}{table.caption.17}% 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.2}{\ignorespaces Parameters Output Neuron}}{24}{table.caption.18}% 
+\contentsline {table}{\numberline {\relax 4.1}{\ignorespaces Parameters Parrot Neuron}}{24}{table.caption.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.3}{\ignorespaces Parameters R-STDP synapse}}{25}{table.caption.19}% 
+\contentsline {table}{\numberline {\relax 4.2}{\ignorespaces Parameters Output Neuron}}{25}{table.caption.18}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.4}{\ignorespaces Ball Directions}}{26}{table.caption.20}% 
+\contentsline {table}{\numberline {\relax 4.3}{\ignorespaces Parameters R-STDP synapse}}{26}{table.caption.19}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.5}{\ignorespaces Parameters 2.Setup}}{31}{table.caption.27}% 
+\contentsline {table}{\numberline {\relax 4.4}{\ignorespaces Ball Directions}}{27}{table.caption.20}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.6}{\ignorespaces Parameters 2.Setup}}{31}{table.caption.28}% 
+\contentsline {table}{\numberline {\relax 4.5}{\ignorespaces Parameters 2.Setup}}{32}{table.caption.27}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.7}{\ignorespaces Parameters Single Hidden Layer}}{35}{table.caption.33}% 
+\contentsline {table}{\numberline {\relax 4.6}{\ignorespaces Parameters 2.Setup}}{32}{table.caption.28}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.8}{\ignorespaces Parameters 2.Setup}}{36}{table.caption.34}% 
+\contentsline {table}{\numberline {\relax 4.7}{\ignorespaces Parameters Single Hidden Layer}}{36}{table.caption.33}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {\relax 3.9}{\ignorespaces Parameters Single Hidden Layer}}{36}{table.caption.35}% 
+\contentsline {table}{\numberline {\relax 4.8}{\ignorespaces Parameters 2.Setup}}{37}{table.caption.34}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {\relax 4.9}{\ignorespaces Parameters Single Hidden Layer}}{37}{table.caption.35}% 
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
