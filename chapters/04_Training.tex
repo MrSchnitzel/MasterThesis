@@ -6,77 +6,13 @@ This chapter first describes the default setup of the network and the training t
 \section{Structure and parameters of the network}
 In this thesis SNNs in different topologies as well as with different parameter settings are going to be tested. First the simplest topology is used consisting of ten poisson neurons, ten LIF input neurons and two LIF output neurons with each a spike detector connected. \autoref{fig:simpleNetwork} shows a schematic of the network where all but the connections between the input and hidden are static and only between the LIF neurons R-STDP synapses are used. The input layer of LIF neurons are set up to parrot the spikes from the poisson neurons and is necessary as the poisson layer is defined by the transfer functions and thus connections to it can not be described in the simulation setup of the network. To produce this behaviour of the neurons their refractory period is set to zero and their threshold voltage is set close to the resting voltage. The exact parameters are shown in \autoref{tab:parrotPar}.
 
-% \begin{figure}[htpb]
-%   \centering
-%   % This should probably go into a file in figures/
-%   \begin{tikzpicture}[node distance=0.5cm]
-%     \node (P0) {};
-%     \node (P1) [right of=P0] {};
-%     \node (P2) [right of=P1] {};
-%     \node (P3) [right of=P2] {};
-%     \node (P4) [right of=P3] {};
-%     \node (P5) [right of=P4] {};
-%     \node (P6) [right of=P5] {};
-%     \node (P7) [right of=P6] {};
-%     \node (P8) [right of=P7] {};
-%     \node (P9) [right of=P8] {};
 
-%     \node (I0) [below of=P0] {};
-%     \node (I1) [right of=I0] {};
-%     \node (I2) [right of=I1] {};
-%     \node (I3) [right of=I2] {};
-%     \node (I4) [right of=I3] {};
-%     \node (I5) [right of=I4] {};
-%     \node (I6) [right of=I5] {};
-%     \node (I7) [right of=I6] {};
-%     \node (I8) [right of=I7] {};
-%     \node (I9) [right of=I8] {};
-
-%     \node (O0) [below of=I0] {};
-%     \node (O1) [right of=O0] {};
-
-%     \node (D0) [below of=O0] {};
-%     \node (D1) [below of=O1] {};
-
-%     \path[every node]
-%       (P0) edge (I0)
-%       (P1) edge (I1)
-%       (P2) edge (I2)
-%       (P3) edge (I3)
-%       (P4) edge (I4)
-%       (P5) edge (I5)
-%       (P6) edge (I6)
-%       (P7) edge (I7)
-%       (P8) edge (I8)
-%       (P9) edge (I9)
-
-%       (I0) edge (O0)
-%       (I1) edge (O0)
-%       (I2) edge (O0)
-%       (I3) edge (O0)
-%       (I4) edge (O0)
-%       (I5) edge (O0)
-%       (I6) edge (O0)
-%       (I7) edge (O0)
-%       (I8) edge (O0)
-%       (I9) edge (O0)
-      
-%       (I0) edge (O1)
-%       (I1) edge (O1)
-%       (I2) edge (O1)
-%       (I3) edge (O1)
-%       (I4) edge (O1)
-%       (I5) edge (O1)
-%       (I6) edge (O1)
-%       (I7) edge (O1)
-%       (I8) edge (O1)
-%       (I9) edge (O1)
-
-%       (O0) edge (D0)
-%       (O1) edge (D1);
-%   \end{tikzpicture}
-%   \caption[Simple Network]{Simple Network Topology}\label{fig:simpleNetwork}
-% \end{figure}
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=\textwidth]{figures/plots/simpleNetwork}
+  \caption Simple Network]{This figure shows the Simplest Network Topology used for simulations}
+  \label{fig:simpleNetwork}
+\end{figure}
 
 \begin{table}[htpb]
 \caption[Parameters Parrot Neuron]{Parameters of Parrot Neurons} \label{tab:parrotPar}
@@ -136,39 +72,12 @@ The parameters for the R-STDP synapses are shown in \autoref{tab:baseRstdp} and 
   \end{table}
 
 The angle used for the reward function, which can be seen as the target angle to minimize, is the angle of the head to the ball at each timestep. Further if this angle overcomes $35$ degrees the target and robot get reset to the starting positions and the path of the target gets inverted.
-The reward factor $c_{rew}$ in the \autoref{eq:reward} is set to $0.00005$ and the reward is halved every $3000$ time steps which helps the network to better stabilise over time. Stabilisation means that the weights in the network only change to small degree or at best not at all. For this to happen the reward to the network has to be zero or near to it. For the angle from the snakes head to the ball this is not possible for each timestep as result of the movement of the snake. By reducing the reward over time we negate this effect to some degree. The factor $c_{imp}$ in \autoref{eg:OutputCalc} is set to $0.05$, this is scaling the impact of the networks output on the direction. In the appendix an overview of the parameters for each experiment is included.  
+The reward factor $c_{rew}$ in the \autoref{eq:reward} is set to $0.00005$ and the reward is halved every $3000$ time steps which helps the network to better stabilise over time. Stabilisation means that the weights in the network only change to small degree or at best not at all. For this to happen the reward to the network has to be zero or near to it. For the angle from the snakes head to the ball this is not possible for each timestep as result of the movement of the snake. By reducing the reward over time we negate this effect to some degree. The factor $c_{imp}$ in \autoref{eg:OutputCalc} is set to $0.05$, this is scaling the impact of the networks output on the direction. 
 
 \section{Simulation environment}
 For the simulation the robot is placed in an empty environment with a sphere as target which is spawned $1.6$ meters in front of the robot with a radius of $30$ centimeters. The sphere or ball is then moved along a path in an eight shaped form. A schematic of the movement pattern of the ball is shown in \autoref{fig:ballMove}, the directions from one point to the other can be found in \autoref{tab:ballMove} in the appendix.
 The target is set to move faster than the snake but won’t move further away from the snake then the initial $1.6$ meters.
 
-
-\begin{table}[htpb]
-  \caption[Ball Directions]{Directions of the Target} \label{tab:ballMove}
-  \centering
-  \begin{tabular}{|c| c |c|}
-      \toprule
-      Step & X & Y  \\
-      \midrule
-        0 &  0.5 & 0.0 \\
-        1 &  2.0 & 1.5 \\
-        2 &  1.0 & 0.0 \\
-        3 &  1.5 & -1.25 \\
-        4 &  0.0 & -0.5 \\
-        5 &  -1.5 & -1.25 \\
-        6 &  -1.0 & 0.0 \\
-        7 &  -2.0 & 1.5 \\
-        8 &  -2.0 & 1.5 \\
-        9 &  -1.0 & 0.0 \\
-        10 &  -1.5 & -1.25 \\
-        12 &  0.0 & -0.5 \\
-        13 &  1.5 & -1.25 \\
-        14 &  1.0 & 0.0 \\
-        15 &  2.0 & 1.5 \\
-        16 &  0.5 & 0.0 \\ 
-      \bottomrule
-  \end{tabular}
-\end{table}
 
 \section{Benchmark Experiment}
 The previously described setting is used as benchmark or baseline setting for testing the capabilities of the setup. 
@@ -265,8 +174,7 @@ The factor the reward is scaled with $c_{rew}$ is set to $0.0001$ for the body n
 With the addition of the head control the structure of the network changes only slightly. Previous network is extended by the two new neurons which are as well connected to each input neuron.
 
 \subsection{Dvs input for Body Neurons}
-\autoref{fig:perfdvsOnlyB2} shows the performance of the snake, where green is the mean angle of the head, blue the mean angle of the body and read the distance to the ball times ten. It shows that the network performs quite well at the beginning as the reward given to network changes the weights strong enough and the target moves in a straight line away from the snake. Later in the simulation, when the target moves in different angles the network gets more and more unstable as shown in \autoref{fig:wblWbrB2Dvs}. The training was stopped after the robot failing several times shortly after the start of the try. It seems that either the network is not complex enough or the information the network gets is not sufficient to derive the direction the body should take after the input is somewhat stabilised by the head. Additional plots of this and all other simulations are included in the appendix.
-
+\autoref{fig:perfdvsOnlyB2} shows the performance of the snake, where green is the mean angle of the head, blue the mean angle of the body and read the distance to the ball times ten. It shows that the network performs quite well at the beginning as the reward given to network changes the weights strong enough and the target moves in a straight line away from the snake. Later in the simulation, when the target moves in different angles the network gets more and more unstable as shown in \autoref{fig:wblWbrB2Dvs}. The training was stopped after the robot failing several times shortly after the start of the try. It seems that either the network is not complex enough or the information the network gets is not sufficient to derive the direction the body should take after the input is somewhat stabilised by the head.
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{figures/plots/perfdvsOnlyB2}
@@ -301,6 +209,54 @@ Previous experiments suggest that a single layered network lacks complexity to s
 
 \subsection{Single Hidden Layer}
 In the first multilayered setup the hidden layer consists of eight neurons, which is the same amount as it has inputs, and the two layers are connected in an ‘all-to-all’ fashion. The parameters for the hidden neurons are shown in \autoref{tab:M1hiddenN} with the main difference in their capacity being higher than previews neurons. For synapses between the input and the hidden layer the parameters shown in \autoref{tab:M1SynH} are used. $tau_{c}$ is set to a higher value compared to previews synapses, with the effect that the eligibility is accumulated over a larger time span and thus the synapse remembers its responsibility for triggering the neuron it connects to for a longer time. This would result in a higher absolute value for the eligibility which would lead to drastic changes of the weights; to counteract this the values for the positive and the negative STDP learning window are scaled down by the same factor $tau_{c}$ is scaled up. For the assignment of the reward to each hidden neuron the backpropagation method described in \autoref{sec:rewardAss} is used and the reward is calculated by \autoref{eq:rewardPSimp}. The parameters used for the connections from the hidden layer to the output for the body are shown in \autoref{tab:M1SynOb}, the topologie of the network is displayed in \autoref{fig:M1netTop}.
+
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=\textwidth]{figures/plots/M1NetworkTop}
+  \caption{ Sketch of Network Topology for the Network with one hidden layer  }
+  \label{fig:M1netTop}
+\end{figure}
+
+% \def\layersep{2.5cm}
+% \begin{tikzpicture}[shorten >=1pt,->,draw=black!50, node distance=\layersep]
+%   \tikzstyle{every pin edge}=[<-,shorten <=1pt]
+%   \tikzstyle{neuron}=[circle,fill=black!25,minimum size=17pt,inner sep=0pt]
+%   \tikzstyle{input neuron}=[neuron, fill=green!50];
+%   \tikzstyle{output neuron}=[neuron, fill=red!50];
+%   \tikzstyle{hidden neuron}=[neuron, fill=blue!50];
+%   \tikzstyle{annot} = [text width=4em, text centered]
+
+%   % Draw the input layer nodes
+%   \foreach \name / \y in {1,...,16}
+%   % This is the same as writing \foreach \name / \y in {1/1,2/2,3/3,4/4}
+%       \node[input neuron, pin=left:Input \#\y] (I-\name) at (0,-\y) {};
+
+%   % Draw the hidden layer nodes
+%   \foreach \name / \y in {1,...,8}
+%       \path[yshift=0.5cm]
+%           node[hidden neuron] (H-\name) at (\layersep,-\y cm) {};
+
+%   % Draw the output layer node
+%   \foreach \name / \y in {1,...,4}
+%     \node[output neuron,pin={[pin edge={->}]right:Output \#\y}, right of=H-3] (\layersep*2,-\y) {};
+
+%   % Connect every node in the input layer with every node in the
+%   % hidden layer.
+%   \foreach \source in {1,...,10}
+%       \foreach \dest in {1,...,2}
+%           \path (I-\source) edge (O-\dest);
+
+%   % Connect every node in the hidden layer with the output layer
+%   \foreach \source in {1,...,5}
+%       \path (H-\source) edge (O);
+
+%   % Annotate the layers
+%   \node[annot,above of=H-1, node distance=1cm] (hl) {Hidden layer};
+%   \node[annot,left of=hl] {Input layer};
+%   \node[annot,right of=hl] {Output layer};
+% \end{tikzpicture}
+
+
 \begin{table}[htpb]
   \centering
   \caption[Parameters Single Hidden Layer]{Parameters of the hidden synapses for the single hidden layer setup} \label{tab:M1SynH}
@@ -369,6 +325,14 @@ While the changes get less over time the network remains able to solve the task 
 \end{figure}
 \subsection{Split Hidden Layer}
 The last network trained is similar to the previous network in all parameters, the only difference lies in the topologie of the network. As shown in \autoref{fig:M2netTop} the hidden layer is split in two pairs of four neurons each and all outgoing connections from a pair go to only one neuron in the output layer. \autoref{eq:rewardPSimp} simplifies for this setup to
+
+\begin{figure}[htpb]
+  \centering
+  \includegraphics[width=\textwidth]{figures/plots/M2netTop}
+  \caption{ Sketch of Network Topology for the Network with split hidden layer  }
+  \label{fig:M2netTop}
+\end{figure}
+
 \begin{equation}
 r_h = r * \frac{w_r} {|w_r|)}
 \end{equation}

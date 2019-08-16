@@ -1,0 +1,78 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {american}{}
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{Acknowledgments}{iii}{Doc-Start}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Abstract}{iv}{chapter*.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Abstract}{v}{chapter*.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {2}Theoretical Background}{2}{chapter.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.1}Biological Background}{2}{section.2.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.2}Artificial Neural Networks}{4}{section.2.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.3}Second generation of ANN}{5}{section.2.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {2.4}Spiking Neural Networks}{8}{section.2.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.1}Leaky Integrate-and-Fire Neuron}{8}{subsection.2.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.2}Stdp learning}{8}{subsection.2.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.3}R-STDP}{9}{subsection.2.4.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.4}Dynamic Vision Sensor}{10}{subsection.2.4.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.5}Snake like Robot}{12}{subsection.2.4.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {2.4.6}Neuro Robotics Platform}{14}{subsection.2.4.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {3}Methology}{16}{chapter.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.1}Simulation Enviroment}{16}{section.3.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.2}Transmitting DVS}{16}{section.3.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.3}Encoding of Joint angles}{20}{section.3.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.4}Output decoding}{20}{section.3.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {3.5}Reward assignment}{21}{section.3.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {4}Training}{24}{chapter.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.1}Structure and parameters of the network}{24}{section.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.2}Simulation environment}{27}{section.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.3}Benchmark Experiment}{27}{section.4.3}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.4}Single Layer Network with Head Control}{29}{section.4.4}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.1}Dvs input for Body Neurons}{31}{subsection.4.4.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.4.2}Additional Tests}{33}{subsection.4.4.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {4.5}Multi layer Networks}{34}{section.4.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.1}Single Hidden Layer}{36}{subsection.4.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {subsection}{\numberline {4.5.2}Split Hidden Layer}{39}{subsection.4.5.2}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {5}Testing}{42}{chapter.5}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {section}{\numberline {5.1}Test results}{42}{section.5.1}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\numberline {7}Apendix}{46}{chapter.7}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Figures}{48}{chapter*.47}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline List of Tables}{50}{chapter*.48}% 
+\defcounter {refsection}{0}\relax 
+\contentsline {chapter}{\nonumberline Bibliography}{51}{chapter*.49}% 
