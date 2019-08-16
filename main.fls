@@ -456,12 +456,18 @@ INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/pages/abstract.tex
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/pages/abstract.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/pages/abstract_ger.tex
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/pages/abstract_ger.tex
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.toc
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.toc
-OUTPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.toc
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
+OUTPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.toc
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/02_TheoreticalBackground.tex
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/02_TheoreticalBackground.tex
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
@@ -474,10 +480,6 @@ INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplb9e.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri9e.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplri9e.vf
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/McPSchema.pdf
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/McPSchema.pdf
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/McPSchema.pdf
@@ -508,15 +510,15 @@ INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplri8r.tfm
-INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/public/cm/cmr10.tfm
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/tfm/adobe/palatino/pplb9e.tfm
@@ -544,6 +546,76 @@ INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/roboGates.png
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/roboGates.png
 INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9e.vf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/03_Methologie.tex
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/03_Methologie.tex
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/startingPosition.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/startingPosition.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/startingPosition.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/realDvs.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/realDvs.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/realDvs.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/DvsView.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/DvsView.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/DvsView.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/roboAngle.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/roboAngle.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/roboAngle.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/MSNNfu.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/MSNNfu.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/MSNNfu.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/04_Training.tex
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/04_Training.tex
+INPUT /usr/local/texlive/2019/texmf-dist/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/midWBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/midWBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/midWBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/endWBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/endWBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/endWBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/dopeBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/dopeBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/dopeBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/angleBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/angleBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/angleBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/moveEndBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/moveEndBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/moveEndBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/WBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/WBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/WBase1.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/perfdvsOnlyB2.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/perfdvsOnlyB2.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/perfdvsOnlyB2.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/wblWbrB2Dvs.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/wblWbrB2Dvs.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/wblWbrB2Dvs.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2JointH.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2JointH.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2JointH.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2DvsH.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2DvsH.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2DvsH.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1Wb.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1Wb.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1Wb.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1baADist.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1baADist.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1baADist.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistMS.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistMS.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistMS.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/05_Testing.tex
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/05_Testing.tex
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/B1_A.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/B1_A.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/B1_A.pdf
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1_perf.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1_perf.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1_perf.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M2-baADist.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M2-baADist.png
+INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M2-baADist.png
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.lof
 INPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.lof
 OUTPUT /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.lof

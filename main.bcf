@@ -2018,6 +2018,11 @@
     <bcf:citekey order="21">snakeRobo</bcf:citekey>
     <bcf:citekey order="22">nrp</bcf:citekey>
     <bcf:citekey order="23">hbp</bcf:citekey>
+    <bcf:citekey order="24">kaiser2016towards</bcf:citekey>
+    <bcf:citekey order="25">kaiser2016towards</bcf:citekey>
+    <bcf:citekey order="26">kaiser2016towards</bcf:citekey>
+    <bcf:citekey order="27">kaiser2016towards</bcf:citekey>
+    <bcf:citekey order="28">bing2019end</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="anyt">

@@ -103,6 +103,62 @@
       \verb https://en.wikipedia.org/wiki/Synapse
       \endverb
     \endentry
+    \entry{bing2019end}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{6}{}{%
+        {{uniquename=0,uniquepart=base,hash=a7e1cd481a680d5ca7664dfa2abb5958}{%
+           family={Bing},
+           familyi={B\bibinitperiod},
+           given={Zhenshan},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=8efe9b645042be3ded98002fbc2d4af6}{%
+           family={Jiang},
+           familyi={J\bibinitperiod},
+           given={Zhuangyi},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5b3e001affb47baac2c24279f94af2c8}{%
+           family={Cheng},
+           familyi={C\bibinitperiod},
+           given={Long},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=60e01cbd8bdb7471f1cc25cc7dfdf129}{%
+           family={Cai},
+           familyi={C\bibinitperiod},
+           given={Caixia},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=ade0b4c1c5cedeaecd33cd784e361ece}{%
+           family={Huang},
+           familyi={H\bibinitperiod},
+           given={Kai},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c45d8c33e4ef56b7d84b362173fe9d96}{%
+           family={Knoll},
+           familyi={K\bibinitperiod},
+           given={Alois},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{01de73db18ea82fd6c2cc3f4b22c5256}
+      \strng{fullhash}{e30dc9e1320621726b6537b791efa4df}
+      \strng{bibnamehash}{e30dc9e1320621726b6537b791efa4df}
+      \strng{authorbibnamehash}{e30dc9e1320621726b6537b791efa4df}
+      \strng{authornamehash}{01de73db18ea82fd6c2cc3f4b22c5256}
+      \strng{authorfullhash}{e30dc9e1320621726b6537b791efa4df}
+      \field{labelalpha}{Bin+19}
+      \field{sortinit}{B}
+      \field{sortinithash}{276475738cc058478c1677046f857703}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2019 IEEE International Conference on Robotics and Automation (ICRA)}
+      \field{title}{End to End Learning of a Multi-layered SNN Based on R-STDP for a Target Tracking Snake-like Robot, to be appear.}
+      \field{year}{2019}
+    \endentry
     \entry{Bishop:998831}{book}{}
       \name{author}{1}{}{%
         {{uniquename=0,uniquepart=base,hash=9dfd0135a5e80aa6d81cea2c10fb7f73}{%
@@ -265,6 +321,91 @@
       \field{month}{10}
       \field{title}{Development and Control of a Bio-snake Robot}
       \field{year}{2018}
+    \endentry
+    \entry{kaiser2016towards}{inproceedings}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{10}{}{%
+        {{uniquename=0,uniquepart=base,hash=03a2579c174915fda286a5a260205647}{%
+           family={Kaiser},
+           familyi={K\bibinitperiod},
+           given={Jacques},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=757ae31cacf3dda4911d77f9f9cbf1a6}{%
+           family={Tieck},
+           familyi={T\bibinitperiod},
+           given={J\bibnamedelima Camilo\bibnamedelima Vasquez},
+           giveni={J\bibinitperiod\bibinitdelim C\bibinitperiod\bibinitdelim V\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7e78aa6e2e9743623b04976f206ff27e}{%
+           family={Hubschneider},
+           familyi={H\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=6ea08b4eb1e704e09cd0d742e8d07049}{%
+           family={Wolf},
+           familyi={W\bibinitperiod},
+           given={Peter},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=e9659ef13f1f7bd1fe161b20f30aaefd}{%
+           family={Weber},
+           familyi={W\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cbc9f78daea2a6c1af472f7b72699119}{%
+           family={Hoff},
+           familyi={H\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=cbcf4d77dfdd9b28c990965fa92ebe02}{%
+           family={Friedrich},
+           familyi={F\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f9dc380bd52312184b940f6d13c72a9a}{%
+           family={Wojtasik},
+           familyi={W\bibinitperiod},
+           given={Konrad},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=f01dd0f05b058e2e33033378b567aedb}{%
+           family={Roennau},
+           familyi={R\bibinitperiod},
+           given={Arne},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=7c026e9219bd8aeceded9dc3ca9e6c7d}{%
+           family={Kohlhaas},
+           familyi={K\bibinitperiod},
+           given={Ralf},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{organization}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{5a56f58493df3b8251b9b0b2a3d39b33}
+      \strng{fullhash}{836bcaf6de18351f4e9795350bf79377}
+      \strng{bibnamehash}{836bcaf6de18351f4e9795350bf79377}
+      \strng{authorbibnamehash}{836bcaf6de18351f4e9795350bf79377}
+      \strng{authornamehash}{5a56f58493df3b8251b9b0b2a3d39b33}
+      \strng{authorfullhash}{836bcaf6de18351f4e9795350bf79377}
+      \field{labelalpha}{Kai+16}
+      \field{sortinit}{K}
+      \field{sortinithash}{9fd838a31ba64d981e8f44562bd33f89}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{2016 IEEE International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR)}
+      \field{title}{Towards a framework for end-to-end control of a simulated vehicle with spiking neural networks}
+      \field{year}{2016}
+      \field{pages}{127\bibrangedash 134}
+      \range{pages}{8}
     \endentry
     \entry{lopez2006neuron}{article}{}
       \name{author}{3}{}{%
