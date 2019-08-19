@@ -51,28 +51,28 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Benchmark Experiment}{27}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.4}Single Layer Network with Head Control}{29}{section.4.4}% 
+\contentsline {section}{\numberline {4.4}Single Layer Network with Head Control}{30}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Dvs input for Body Neurons}{31}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.1}Dvs input for Body Neurons}{34}{subsection.4.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.2}Additional Tests}{33}{subsection.4.4.2}% 
+\contentsline {subsection}{\numberline {4.4.2}Additional Tests}{34}{subsection.4.4.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.5}Multi layer Networks}{34}{section.4.5}% 
+\contentsline {section}{\numberline {4.5}Multi layer Networks}{35}{section.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.1}Single Hidden Layer}{36}{subsection.4.5.1}% 
+\contentsline {subsection}{\numberline {4.5.1}Single Hidden Layer}{37}{subsection.4.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.5.2}Split Hidden Layer}{39}{subsection.4.5.2}% 
+\contentsline {subsection}{\numberline {4.5.2}Split Hidden Layer}{40}{subsection.4.5.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Testing}{42}{chapter.5}% 
+\contentsline {chapter}{\numberline {5}Testing}{43}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Test results}{42}{section.5.1}% 
+\contentsline {section}{\numberline {5.1}Test results}{43}{section.5.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Conclusion}{45}{chapter.6}% 
+\contentsline {chapter}{\numberline {6}Conclusion}{46}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Apendix}{46}{chapter.7}% 
+\contentsline {chapter}{\numberline {7}Apendix}{47}{chapter.7}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Figures}{48}{chapter*.47}% 
+\contentsline {chapter}{\nonumberline List of Figures}{49}{chapter*.46}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline List of Tables}{50}{chapter*.48}% 
+\contentsline {chapter}{\nonumberline List of Tables}{51}{chapter*.47}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\nonumberline Bibliography}{51}{chapter*.49}% 
+\contentsline {chapter}{\nonumberline Bibliography}{52}{chapter*.48}% 
