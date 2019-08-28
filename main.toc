@@ -15,45 +15,45 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.2}Artificial Neural Networks}{4}{section.2.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {2.3}Second generation of ANN}{5}{section.2.3}% 
+\contentsline {section}{\numberline {2.3}Second Generation of ANN}{5}{section.2.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Spiking Neural Networks}{8}{section.2.4}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.1}Leaky Integrate-and-Fire Neuron}{8}{subsection.2.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.2}Stdp learning}{8}{subsection.2.4.2}% 
+\contentsline {subsection}{\numberline {2.4.2}STDP learning}{8}{subsection.2.4.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.3}R-STDP}{9}{subsection.2.4.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.4}Dynamic Vision Sensor}{10}{subsection.2.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.5}Snake like Robot}{12}{subsection.2.4.5}% 
+\contentsline {subsection}{\numberline {2.4.5}Snake-like Robot}{12}{subsection.2.4.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.6}Neuro Robotics Platform}{14}{subsection.2.4.6}% 
+\contentsline {subsection}{\numberline {2.4.6}Neurorobotics Platform}{14}{subsection.2.4.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Methology}{16}{chapter.3}% 
+\contentsline {chapter}{\numberline {3}Methodology}{16}{chapter.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.1}Simulation Enviroment}{16}{section.3.1}% 
+\contentsline {section}{\numberline {3.1}Simulation Environment}{16}{section.3.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {3.2}Transmitting DVS}{16}{section.3.2}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.3}Encoding of Joint angles}{20}{section.3.3}% 
+\contentsline {section}{\numberline {3.3}Encoding of Joint Angles}{20}{section.3.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.4}Output decoding}{20}{section.3.4}% 
+\contentsline {section}{\numberline {3.4}Output Decoding}{20}{section.3.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {3.5}Reward assignment}{21}{section.3.5}% 
+\contentsline {section}{\numberline {3.5}Reward Assignment}{21}{section.3.5}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {4}Training}{24}{chapter.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.1}Structure and parameters of the network}{24}{section.4.1}% 
+\contentsline {section}{\numberline {4.1}Structure and Parameters of the Network}{24}{section.4.1}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {4.2}Simulation environment}{27}{section.4.2}% 
+\contentsline {section}{\numberline {4.2}Simulation Environment}{27}{section.4.2}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.3}Benchmark Experiment}{27}{section.4.3}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {4.4}Single Layer Network with Head Control}{30}{section.4.4}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {4.4.1}Dvs input for Body Neurons}{34}{subsection.4.4.1}% 
+\contentsline {subsection}{\numberline {4.4.1}Dvs Input for Body Neurons}{34}{subsection.4.4.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {4.4.2}Additional Tests}{34}{subsection.4.4.2}% 
 \defcounter {refsection}{0}\relax 
@@ -65,11 +65,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {5}Testing}{43}{chapter.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {section}{\numberline {5.1}Test results}{43}{section.5.1}% 
+\contentsline {section}{\numberline {5.1}Test Results}{43}{section.5.1}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {6}Conclusion}{46}{chapter.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {7}Apendix}{47}{chapter.7}% 
+\contentsline {chapter}{\numberline {A}Apendix}{47}{appendix.A}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\nonumberline List of Figures}{49}{chapter*.46}% 
 \defcounter {refsection}{0}\relax 

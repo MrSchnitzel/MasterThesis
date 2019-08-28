@@ -4,22 +4,22 @@ To test the performance of the trained networks a different path for the target 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{figures/plots/testPath}
-  \caption{ Performance of the basic network in the test }
+  \caption{ Schematic of the path of the ball in the test  }
   \label{fig:testPath}
 \end{figure}
-\section{Test results}
+\section{Test Results}
 First the basic setup was tested and finished the task two times without any error. In the second run the path was mirrored on the $y$-Axe. As seen in \autoref{fig:B1_A} mean angle to the ball never surpasses an absolute value of $4$ degrees which is quite impressive.
 \newline
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/B1_A}
+  \includegraphics[scale=0.77]{figures/plots/newPlots/base1test_perf}%B1_A}
   \caption{ Performance of the basic network in the test }
   \label{fig:B1_A}
 \end{figure}
 Next the network with the single hidden layer was tested and even though it seemed as the weights head stabilised at the end of the training simulation, the network was not able to perform at all and never made it to the first turn. \autoref{fig:M1_perf} shows how the network fails as it has a too high affinity to go left.
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/M1_perf}
+  \includegraphics[scale=0.77]{figures/plots/newPlots/m1test_perf}%M1_perf}
   \caption{ Performance of the multilayer network with one hidden layer in the test }
   \label{fig:M1_perf}
 \end{figure}
@@ -27,11 +27,10 @@ Next the network with the single hidden layer was tested and even though it seem
 At last the network with the split hidden layer is tested. It performs well and keeps the mean body angl most time below $5$ degrees while its head angle is moste time lower than $1$ degree, see \autoref{fig:M2-baADist}.
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/M2-baADist}
-  \caption{ Performance of the multilayer network with the split hidden layer in the test }
+  \includegraphics[scale=0.80]{figures/plots/newPlots/m2-test_perf}%M2-baADist}
+  \caption{ Performance of the multilayer network with split hidden layer in the test}
   \label{fig:M2-baADist}
 \end{figure}
-
 
 
 % \begin{table}[htpb]

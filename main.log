@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  19 AUG 2019 13:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.8.9)  28 AUG 2019 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1318,7 +1318,7 @@ File: figures/McPSchema.pdf Graphic file (type pdf)
 Package pdftex.def Info: figures/McPSchema.pdf  used on input line 33.
 (pdftex.def)             Requested size: 368.5967pt x 170.36244pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 30--40
+Underfull \hbox (badness 10000) in paragraph at lines 30--39
 
  []
 
@@ -1326,41 +1326,41 @@ Underfull \hbox (badness 10000) in paragraph at lines 30--40
 <figures/logisticFunc.png, id=174, 1388.18625pt x 394.47375pt>
 File: figures/logisticFunc.png Graphic file (type png)
 <use figures/logisticFunc.png>
-Package pdftex.def Info: figures/logisticFunc.png  used on input line 67.
+Package pdftex.def Info: figures/logisticFunc.png  used on input line 66.
 (pdftex.def)             Requested size: 418.25555pt x 118.85466pt.
  [5 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/McPSchema.pdf
 
 pdfTeX warning: pdflatex (file /Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/McPSchema.pdf): PDF inclusion: invalid other resource which is no dict (key 'ProcSets', type <array>); ignored.
 >] [6 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/logisticFunc.png>] [7]
 LaTeX Font Info:    Font shape `T1/pplx/bx/n' in size <12> not available
-(Font)              Font shape `T1/pplx/b/n' tried instead on input line 135.
+(Font)              Font shape `T1/pplx/b/n' tried instead on input line 134.
  [8]
 <figures/STDPcurve.png, id=243, 834.11626pt x 357.335pt>
 File: figures/STDPcurve.png Graphic file (type png)
 <use figures/STDPcurve.png>
-Package pdftex.def Info: figures/STDPcurve.png  used on input line 168.
+Package pdftex.def Info: figures/STDPcurve.png  used on input line 167.
 (pdftex.def)             Requested size: 418.25555pt x 179.17958pt.
  [9 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/STDPcurve.png>]
 <figures/rstdp.png, id=254, 94.51057pt x 96.02805pt>
 File: figures/rstdp.png Graphic file (type png)
 <use figures/rstdp.png>
-Package pdftex.def Info: figures/rstdp.png  used on input line 196.
+Package pdftex.def Info: figures/rstdp.png  used on input line 195.
 (pdftex.def)             Requested size: 283.53099pt x 288.0834pt.
  [10] [11 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/rstdp.png>]
 <figures/rotatingDot.png, id=273, 1034.86626pt x 343.2825pt>
 File: figures/rotatingDot.png Graphic file (type png)
 <use figures/rotatingDot.png>
-Package pdftex.def Info: figures/rotatingDot.png  used on input line 219.
+Package pdftex.def Info: figures/rotatingDot.png  used on input line 218.
 (pdftex.def)             Requested size: 418.25555pt x 138.74054pt.
 <figures/rotatingDotAdd.png, id=274, 1025.8325pt x 342.27875pt>
 File: figures/rotatingDotAdd.png Graphic file (type png)
 <use figures/rotatingDotAdd.png>
-Package pdftex.def Info: figures/rotatingDotAdd.png  used on input line 221.
+Package pdftex.def Info: figures/rotatingDotAdd.png  used on input line 220.
 (pdftex.def)             Requested size: 418.25555pt x 139.55699pt.
 <figures/roboGates.png, id=277, 1357.07pt x 764.8575pt>
 File: figures/roboGates.png Graphic file (type png)
 <use figures/roboGates.png>
-Package pdftex.def Info: figures/roboGates.png  used on input line 233.
+Package pdftex.def Info: figures/roboGates.png  used on input line 232.
 (pdftex.def)             Requested size: 418.25555pt x 235.72621pt.
  [12] [13 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/rotatingDot.png> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/rotatingDotAdd.png>]) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/03_Methologie.tex [14 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/roboGates.png>] [15]
 chapter 3.
@@ -1406,114 +1406,114 @@ Package pdftex.def Info: figures/plots/simpleNetwork.png  used on input line 12.
 
 
 ] [25 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/simpleNetwork.png>] [26]
-<figures/plots/midWBase1.png, id=415, 688.0104pt x 428.5611pt>
-File: figures/plots/midWBase1.png Graphic file (type png)
-<use figures/plots/midWBase1.png>
-Package pdftex.def Info: figures/plots/midWBase1.png  used on input line 88.
-(pdftex.def)             Requested size: 418.25555pt x 260.53253pt.
-<figures/plots/endWBase1.png, id=416, 688.0104pt x 428.5611pt>
-File: figures/plots/endWBase1.png Graphic file (type png)
-<use figures/plots/endWBase1.png>
-Package pdftex.def Info: figures/plots/endWBase1.png  used on input line 96.
-(pdftex.def)             Requested size: 418.25555pt x 260.53253pt.
- [27] [28 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/midWBase1.png>] [29 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/endWBase1.png>]
-<figures/plots/dopeBase1.png, id=439, 534.798pt x 369.2997pt>
-File: figures/plots/dopeBase1.png Graphic file (type png)
-<use figures/plots/dopeBase1.png>
-Package pdftex.def Info: figures/plots/dopeBase1.png  used on input line 104.
-(pdftex.def)             Requested size: 418.25555pt x 288.83023pt.
-<figures/plots/angleBase1.png, id=440, 462.528pt x 317.988pt>
-File: figures/plots/angleBase1.png Graphic file (type png)
-<use figures/plots/angleBase1.png>
-Package pdftex.def Info: figures/plots/angleBase1.png  used on input line 110.
+<figures/plots/newPlots/base1Training_weights_mid.png, id=415, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base1Training_weights_mid.png Graphic file (type png)
+<use figures/plots/newPlots/base1Training_weights_mid.png>
+Package pdftex.def Info: figures/plots/newPlots/base1Training_weights_mid.png  used on input line 88.
 (pdftex.def)             Requested size: 418.25555pt x 287.56454pt.
-<figures/plots/WBase1.png, id=441, 688.0104pt x 428.5611pt>
-File: figures/plots/WBase1.png Graphic file (type png)
-<use figures/plots/WBase1.png>
-Package pdftex.def Info: figures/plots/WBase1.png  used on input line 116.
-(pdftex.def)             Requested size: 418.25555pt x 260.53253pt.
- [30 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/dopeBase1.png>] [31 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/angleBase1.png>] [32 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/WBase1.png>]
-<figures/plots/perfdvsOnlyB2.pdf, id=468, 2233.34375pt x 1229.59375pt>
-File: figures/plots/perfdvsOnlyB2.pdf Graphic file (type pdf)
-<use figures/plots/perfdvsOnlyB2.pdf>
-Package pdftex.def Info: figures/plots/perfdvsOnlyB2.pdf  used on input line 174.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/wblWbrB2Dvs.pdf, id=469, 2233.34375pt x 1229.59375pt>
-File: figures/plots/wblWbrB2Dvs.pdf Graphic file (type pdf)
-<use figures/plots/wblWbrB2Dvs.pdf>
-Package pdftex.def Info: figures/plots/wblWbrB2Dvs.pdf  used on input line 180.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
- [33] [34 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/perfdvsOnlyB2.pdf>]
-<figures/plots/baADistB2JointH.pdf, id=492, 2233.34375pt x 1229.59375pt>
-File: figures/plots/baADistB2JointH.pdf Graphic file (type pdf)
-<use figures/plots/baADistB2JointH.pdf>
-Package pdftex.def Info: figures/plots/baADistB2JointH.pdf  used on input line 190.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/baADistB2DvsH.pdf, id=493, 2233.34375pt x 1229.59375pt>
-File: figures/plots/baADistB2DvsH.pdf Graphic file (type pdf)
-<use figures/plots/baADistB2DvsH.pdf>
-Package pdftex.def Info: figures/plots/baADistB2DvsH.pdf  used on input line 196.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
- [35 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/wblWbrB2Dvs.pdf>] [36 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2JointH.pdf> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistB2DvsH.pdf>]
-<figures/plots/M1NetworkTop.png, id=529, 864.22874pt x 783.92876pt>
+<figures/plots/newPlots/base1Training_weights_end.png, id=416, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base1Training_weights_end.png Graphic file (type png)
+<use figures/plots/newPlots/base1Training_weights_end.png>
+Package pdftex.def Info: figures/plots/newPlots/base1Training_weights_end.png  used on input line 96.
+(pdftex.def)             Requested size: 418.25555pt x 287.56454pt.
+ [27] [28 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base1Training_weights_mid.png>] [29 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base1Training_weights_end.png>]
+<figures/plots/newPlots/base1Training_reward.png, id=439, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base1Training_reward.png Graphic file (type png)
+<use figures/plots/newPlots/base1Training_reward.png>
+Package pdftex.def Info: figures/plots/newPlots/base1Training_reward.png  used on input line 104.
+(pdftex.def)             Requested size: 418.25555pt x 287.56454pt.
+<figures/plots/newPlots/base1Training_perf.png, id=440, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base1Training_perf.png Graphic file (type png)
+<use figures/plots/newPlots/base1Training_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/base1Training_perf.png  used on input line 110.
+(pdftex.def)             Requested size: 418.25555pt x 287.56454pt.
+<figures/plots/newPlots/base1Training_weights.png, id=441, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base1Training_weights.png Graphic file (type png)
+<use figures/plots/newPlots/base1Training_weights.png>
+Package pdftex.def Info: figures/plots/newPlots/base1Training_weights.png  used on input line 116.
+(pdftex.def)             Requested size: 418.25555pt x 287.56454pt.
+ [30 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base1Training_reward.png>] [31 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base1Training_perf.png>] [32 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base1Training_weights.png>]
+<figures/plots/newPlots/base2_perf.png, id=468, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base2_perf.png Graphic file (type png)
+<use figures/plots/newPlots/base2_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/base2_perf.png  used on input line 174.
+(pdftex.def)             Requested size: 356.14764pt x 244.8515pt.
+<figures/plots/newPlots/base2_weights.png, id=469, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base2_weights.png Graphic file (type png)
+<use figures/plots/newPlots/base2_weights.png>
+Package pdftex.def Info: figures/plots/newPlots/base2_weights.png  used on input line 180.
+(pdftex.def)             Requested size: 356.14764pt x 244.8515pt.
+ [33] [34 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base2_perf.png>]
+<figures/plots/newPlots/base2HJoints_perf.png, id=487, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base2HJoints_perf.png Graphic file (type png)
+<use figures/plots/newPlots/base2HJoints_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/base2HJoints_perf.png  used on input line 190.
+(pdftex.def)             Requested size: 356.14764pt x 244.8515pt.
+<figures/plots/newPlots/base2HDVS_perf.png, id=488, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base2HDVS_perf.png Graphic file (type png)
+<use figures/plots/newPlots/base2HDVS_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/base2HDVS_perf.png  used on input line 196.
+(pdftex.def)             Requested size: 356.14764pt x 244.8515pt.
+ [35 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base2_weights.png>] [36 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base2HJoints_perf.png> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base2HDVS_perf.png>]
+<figures/plots/M1NetworkTop.png, id=509, 864.22874pt x 783.92876pt>
 File: figures/plots/M1NetworkTop.png Graphic file (type png)
 <use figures/plots/M1NetworkTop.png>
 Package pdftex.def Info: figures/plots/M1NetworkTop.png  used on input line 209.
 (pdftex.def)             Requested size: 418.25555pt x 379.39159pt.
-<figures/plots/M1Wb.pdf, id=532, 2233.34375pt x 1229.59375pt>
-File: figures/plots/M1Wb.pdf Graphic file (type pdf)
-<use figures/plots/M1Wb.pdf>
-Package pdftex.def Info: figures/plots/M1Wb.pdf  used on input line 309.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-<figures/plots/M1baADist.pdf, id=534, 2233.34375pt x 1229.59375pt>
-File: figures/plots/M1baADist.pdf Graphic file (type pdf)
-<use figures/plots/M1baADist.pdf>
-Package pdftex.def Info: figures/plots/M1baADist.pdf  used on input line 316.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
- [37] [38 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1NetworkTop.png>] [39 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1Wb.pdf>]
-<figures/plots/M2netTop.png, id=562, 864.22874pt x 783.92876pt>
+<figures/plots/newPlots/m1Train_bodyW.png, id=512, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/m1Train_bodyW.png Graphic file (type png)
+<use figures/plots/newPlots/m1Train_bodyW.png>
+Package pdftex.def Info: figures/plots/newPlots/m1Train_bodyW.png  used on input line 309.
+(pdftex.def)             Requested size: 418.25555pt x 287.56454pt.
+<figures/plots/newPlots/m1train_perf.png, id=514, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/m1train_perf.png Graphic file (type png)
+<use figures/plots/newPlots/m1train_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/m1train_perf.png  used on input line 316.
+(pdftex.def)             Requested size: 418.25555pt x 287.56454pt.
+ [37] [38 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1NetworkTop.png>] [39 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/m1Train_bodyW.png>]
+<figures/plots/M2netTop.png, id=537, 864.22874pt x 783.92876pt>
 File: figures/plots/M2netTop.png Graphic file (type png)
 <use figures/plots/M2netTop.png>
 Package pdftex.def Info: figures/plots/M2netTop.png  used on input line 325.
 (pdftex.def)             Requested size: 418.25555pt x 379.39159pt.
-<figures/plots/baADistMS.pdf, id=564, 2233.34375pt x 1229.59375pt>
-File: figures/plots/baADistMS.pdf Graphic file (type pdf)
-<use figures/plots/baADistMS.pdf>
-Package pdftex.def Info: figures/plots/baADistMS.pdf  used on input line 341.
-(pdftex.def)             Requested size: 418.25555pt x 230.26683pt.
-) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/05_Testing.tex [40 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1baADist.pdf>] [41 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M2netTop.png>] [42 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/baADistMS.pdf>]
+<figures/plots/newPlots/m2-train_perf.png, id=539, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/m2-train_perf.png Graphic file (type png)
+<use figures/plots/newPlots/m2-train_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/m2-train_perf.png  used on input line 341.
+(pdftex.def)             Requested size: 418.25555pt x 287.56454pt.
+) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/05_Testing.tex [40 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/m1train_perf.png>] [41 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M2netTop.png>] [42 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/m2-train_perf.png>]
 chapter 5.
-<figures/plots/testPath.png, id=597, 1621.05624pt x 323.2075pt>
+<figures/plots/testPath.png, id=561, 1621.05624pt x 323.2075pt>
 File: figures/plots/testPath.png Graphic file (type png)
 <use figures/plots/testPath.png>
 Package pdftex.def Info: figures/plots/testPath.png  used on input line 6.
 (pdftex.def)             Requested size: 418.25555pt x 83.39084pt.
-<figures/plots/B1_A.pdf, id=599, 2326.6925pt x 1281.78876pt>
-File: figures/plots/B1_A.pdf Graphic file (type pdf)
-<use figures/plots/B1_A.pdf>
-Package pdftex.def Info: figures/plots/B1_A.pdf  used on input line 15.
-(pdftex.def)             Requested size: 418.25555pt x 230.41864pt.
-<figures/plots/M1_perf.png, id=601, 1675.2186pt x 922.8879pt>
-File: figures/plots/M1_perf.png Graphic file (type png)
-<use figures/plots/M1_perf.png>
-Package pdftex.def Info: figures/plots/M1_perf.png  used on input line 22.
-(pdftex.def)             Requested size: 418.25555pt x 230.4116pt.
-<figures/plots/M2-baADist.png, id=603, 1675.2186pt x 922.8879pt>
-File: figures/plots/M2-baADist.png Graphic file (type png)
-<use figures/plots/M2-baADist.png>
-Package pdftex.def Info: figures/plots/M2-baADist.png  used on input line 30.
-(pdftex.def)             Requested size: 418.25555pt x 230.4116pt.
+<figures/plots/newPlots/base1test_perf.png, id=563, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/base1test_perf.png Graphic file (type png)
+<use figures/plots/newPlots/base1test_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/base1test_perf.png  used on input line 15.
+(pdftex.def)             Requested size: 356.14764pt x 244.8515pt.
+<figures/plots/newPlots/m1test_perf.png, id=565, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/m1test_perf.png Graphic file (type png)
+<use figures/plots/newPlots/m1test_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/m1test_perf.png  used on input line 22.
+(pdftex.def)             Requested size: 356.14764pt x 244.8515pt.
+<figures/plots/newPlots/m2-test_perf.png, id=567, 462.528pt x 317.988pt>
+File: figures/plots/newPlots/m2-test_perf.png Graphic file (type png)
+<use figures/plots/newPlots/m2-test_perf.png>
+Package pdftex.def Info: figures/plots/newPlots/m2-test_perf.png  used on input line 30.
+(pdftex.def)             Requested size: 370.02289pt x 254.39073pt.
 ) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/06_Conclusion.tex [43
 
 
- </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/testPath.png>] [44 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/B1_A.pdf> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M1_perf.png>] [45 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/M2-baADist.png>]
+ </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/testPath.png>] [44 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/base1test_perf.png> </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/m1test_perf.png>] [45 </Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/figures/plots/newPlots/m2-test_perf.png>]
 chapter 6.
 ) (/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/chapters/07_Apendix.tex [46
 
 
 ]
-chapter 7.
-<figures/plots/ballMove.png, id=637, 242.9075pt x 805.0075pt>
+chapter A.
+<figures/plots/ballMove.png, id=593, 242.9075pt x 805.0075pt>
 File: figures/plots/ballMove.png Graphic file (type png)
 <use figures/plots/ballMove.png>
 Package pdftex.def Info: figures/plots/ballMove.png  used on input line 5.
@@ -1575,18 +1575,18 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 51768 strings out of 492616
- 1136055 string characters out of 6129482
- 1818885 words of memory out of 5000000
+ 51769 strings out of 492616
+ 1136927 string characters out of 6129482
+ 1818897 words of memory out of 5000000
  54407 multiletter control sequences out of 15000+600000
  596131 words of font info for 310 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  81i,13n,136p,9166b,2906s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/public/cm-super/sftt1095.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on "/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.pdf" (61 pages, 9364570 bytes).
+Output written on "/Users/riggi/Google Drive/Dokumente/Uni/MasterArbeit/Latex/Mine/tum-thesis-latex/main.pdf" (61 pages, 6665237 bytes).
 PDF statistics:
- 935 PDF objects out of 1000 (max. 8388607)
- 773 compressed objects within 8 object streams
+ 890 PDF objects out of 1000 (max. 8388607)
+ 730 compressed objects within 8 object streams
  194 named destinations out of 1000 (max. 500000)
  35823 words of extra memory for PDF output out of 35830 (max. 10000000)
 

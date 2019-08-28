@@ -3,14 +3,14 @@
 
 \chapter{Training}\label{chapter:Training}
 This chapter first describes the default setup of the network and the training task. Followed by the specification of the target and its trajectory. Afterwards the specifics of the different experiment setups are described as well as the results of the training phase.
-\section{Structure and parameters of the network}
+\section{Structure and Parameters of the Network}
 In this thesis SNNs in different topologies as well as with different parameter settings are going to be tested. First the simplest topology is used consisting of ten poisson neurons, ten LIF input neurons and two LIF output neurons with each a spike detector connected. \autoref{fig:simpleNetwork} shows a schematic of the network where all but the connections between the input and hidden are static and only between the LIF neurons R-STDP synapses are used. The input layer of LIF neurons are set up to parrot the spikes from the poisson neurons and is necessary as the poisson layer is defined by the transfer functions and thus connections to it can not be described in the simulation setup of the network. To produce this behaviour of the neurons their refractory period is set to zero and their threshold voltage is set close to the resting voltage. The exact parameters are shown in \autoref{tab:parrotPar}.
 
 
 \begin{figure}[htpb]
   \centering
   \includegraphics[width=\textwidth]{figures/plots/simpleNetwork}
-  \caption Simple Network]{This figure shows the Simplest Network Topology used for simulations}
+  \caption [Simple Network]{This figure shows the Simplest Network Topology used for simulations}
   \label{fig:simpleNetwork}
 \end{figure}
 
@@ -74,7 +74,7 @@ The parameters for the R-STDP synapses are shown in \autoref{tab:baseRstdp} and 
 The angle used for the reward function, which can be seen as the target angle to minimize, is the angle of the head to the ball at each timestep. Further if this angle overcomes $35$ degrees the target and robot get reset to the starting positions and the path of the target gets inverted.
 The reward factor $c_{rew}$ in the \autoref{eq:reward} is set to $0.00005$ and the reward is halved every $3000$ time steps which helps the network to better stabilise over time. Stabilisation means that the weights in the network only change to small degree or at best not at all. For this to happen the reward to the network has to be zero or near to it. For the angle from the snakes head to the ball this is not possible for each timestep as result of the movement of the snake. By reducing the reward over time we negate this effect to some degree. The factor $c_{imp}$ in \autoref{eg:OutputCalc} is set to $0.05$, this is scaling the impact of the networks output on the direction. 
 
-\section{Simulation environment}
+\section{Simulation Environment}
 For the simulation the robot is placed in an empty environment with a sphere as target which is spawned $1.6$ meters in front of the robot with a radius of $30$ centimeters. The sphere or ball is then moved along a path in an eight shaped form. A schematic of the movement pattern of the ball is shown in \autoref{fig:ballMove}, the directions from one point to the other can be found in \autoref{tab:ballMove} in the appendix.
 The target is set to move faster than the snake but won’t move further away from the snake then the initial $1.6$ meters.
 
@@ -85,35 +85,35 @@ The training simulation shows that the network is able to completely solve the t
 
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/midWBase1}
-  \caption{Movement of weights while still learning }
+  \includegraphics[width=\textwidth]{figures/plots/newPlots/base1Training_weights_mid}%midWBase1}
+  \caption{Change of weights while still learning }
   \label{fig:midWBase1}
 \end{figure}
 
 
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/endWBase1}
-  \caption{Movement of weights learning almost ended }
+  \includegraphics[width=\textwidth]{figures/plots/newPlots/base1Training_weights_end}%endWBase1}
+  \caption{Change of weights at end of learning period }
   \label{fig:endWBase1}
 \end{figure}
 \autoref{fig:WBase1} shows the graph of the weights over the whole training period where \autoref{fig:dopeBase1} and \autoref{fig:angleBase1} show the graphs for reward given to the network and the mean angle and distance to the target over time.
 
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/dopeBase1}
+  \includegraphics[width=\textwidth]{figures/plots/newPlots/base1Training_reward}%dopeBase1}
   \caption{ Complete plot of the reward }
   \label{fig:dopeBase1}
 \end{figure}
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/angleBase1}
+  \includegraphics[width=\textwidth]{figures/plots/newPlots/base1Training_perf}%angleBase1}
   \caption{ Complete plot of the mean angle and distance to the Target }
   \label{fig:angleBase1}
 \end{figure}
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/WBase1}
+  \includegraphics[width=\textwidth]{figures/plots/newPlots/base1Training_weights}%WBase1}
   \caption{ Complete plot of the weights for the base simulation }
   \label{fig:WBase1}
 \end{figure}
@@ -167,17 +167,17 @@ The factor the reward is scaled with $c_{rew}$ is set to $0.0001$ for the body n
     \end{table}
 With the addition of the head control the structure of the network changes only slightly. Previous network is extended by the two new neurons which are as well connected to each input neuron.
 
-\subsection{Dvs input for Body Neurons}
+\subsection{Dvs Input for Body Neurons}
 \autoref{fig:perfdvsOnlyB2} shows the performance of the snake, where green is the mean angle of the head, blue the mean angle of the body and read the distance to the ball times ten. It shows that the network performs quite well at the beginning as the reward given to network changes the weights strong enough and the target moves in a straight line away from the snake. Later in the simulation, when the target moves in different angles the network gets more and more unstable as shown in \autoref{fig:wblWbrB2Dvs}. The training was stopped after the robot failing several times shortly after the start of the try. It seems that either the network is not complex enough or the information the network gets is not sufficient to derive the direction the body should take after the input is somewhat stabilised by the head.
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/perfdvsOnlyB2}
+  \includegraphics[scale=0.77]{figures/plots/newPlots/base2_perf}%perfdvsOnlyB2}
   \caption{ Single Layer Network + Head Control: performance in training }
   \label{fig:perfdvsOnlyB2}
 \end{figure}
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/wblWbrB2Dvs}
+  \includegraphics[scale=0.77]{figures/plots/newPlots/base2_weights}%wblWbrB2Dvs}
   \caption{ Single Layer Network + Head Control: Plot of the weights }
   \label{fig:wblWbrB2Dvs}
 \end{figure}
@@ -187,13 +187,13 @@ Both networks showed a similar behavior to the first test case with head control
 
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/baADistB2JointH}
+  \includegraphics[scale=0.77]{figures/plots/newPlots/base2HJoints_perf}%baADistB2JointH}
   \caption{ Performance of SNN with Joint Angles and Head output as input (training) }
   \label{fig:baADistB2JointH}
 \end{figure}
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/baADistB2DvsH}
+  \includegraphics[scale=0.77]{figures/plots/newPlots/base2HDVS_perf}%baADistB2DvsH}
   \caption{ Performance of SNN with DVS and Head output as input (training)  }
   \label{fig:baADistB2DvsH}
 \end{figure}
@@ -306,14 +306,14 @@ In the first multilayered setup the hidden layer consists of eight neurons, whic
 For this setup the learning phase was much longer compared to the single layer network. At the time the weights for the first setup stabilised the weights in this simulation still were under a lot of change. This can be seen by comparing the graph of the weights for the output layer in \autoref{fig:WBase1}, with \autoref{fig:M1Wb} which shows the weights for this setup.
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/M1Wb}
-  \caption{ Weights connecting the body output of SNN with one hidden Layer (training)  }
+  \includegraphics[width=\textwidth]{figures/plots/newPlots/m1Train_bodyW}%M1Wb}
+  \caption{ Weights connecting the body output of SNN with the hidden Layer (training)  }
   \label{fig:M1Wb}
 \end{figure}
 While the changes get less over time the network remains able to solve the task with a very good performance of the head and a good result for the mean body angle with peaks of around $25$ degrees towards the end of the training. \autoref{fig:M1baADist} shows the plot of the mean angles as well as the distance to the target for this setup.
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/M1baADist}
+  \includegraphics[width=\textwidth]{figures/plots/newPlots/m1train_perf}%M1baADist}
   \caption{ Performance of SNN with one hidden Layer (training)  }
   \label{fig:M1baADist}
 \end{figure}
@@ -338,7 +338,7 @@ for the hidden layer connected to the left output. This simplification is the re
 Training the network took about as long as for the other multilayered network and the overall performance is comparable but this version had spikes in the mean body angle of around $32$ degrees. The plot of the mean angles for this training is shown in \autoref{fig:baADistMS}.
 \begin{figure}[htpb]
   \centering
-  \includegraphics[width=\textwidth]{figures/plots/baADistMS}
+  \includegraphics[width=\textwidth]{figures/plots/newPlots/m2-train_perf}%baADistMS}
   \caption{ Performance of SNN with a split hidden Layer (training)  }
   \label{fig:baADistMS}
 \end{figure}

@@ -1,10 +1,10 @@
 % !TeX root = ../main.tex
 % Add the above to each chapter to make compiling the PDF easier in some editors.
 
-\chapter{Methology}\label{chapter:Methology}
+\chapter{Methodology}\label{chapter:Methology}
 In this section the setup for the simulation as well as the transfer functions used for the data exchange are described.
 
-\section{Simulation Enviroment}
+\section{Simulation Environment}
 In the simulation the robot is placed in an empty environment with only a ball as target in front of it. The ball has a radius of $30$ centimeters and is placed $1.6$ meters in front of the robot. A screenshot of the configuration in starting position is shown in \autoref{fig:startingPosRobo}. During the simulation the target moves along a predefined path and the snake is supposed to follow it. When the angle between the orientation of the snake head and the target surpass a certain threshold the simulation is paused, the snake and the target are reset to their starting positions and the simulation is unpaused. The path of the target is mirrored after each reset. As step size for the CLE a time span of $20$ milliseconds is used.
 
 \begin{figure}[htpb]
@@ -40,11 +40,11 @@ As the events occur all at the same time but represent the accumulated change ov
 \begin{equation}
   f = N_{events} * 50
 \end{equation}
-with the factor $50$ resulting from the simulation timestep lasting one fiftieth of a second and $f$ being measured in $Hz$.  Each superpixel has a corresponding Poisson neuron as input for the neural network, which is set to spike at the calculated frequency for the next timestep.
+The factor at the end results from the simulation timestep lasting one fiftieth of a second thus the frequency $f$, measured in $Hz$, must be $50$ times that high.  Each superpixel has a corresponding Poisson neuron as input for the neural network, which is set to spike at the calculated frequency for the next timestep.
 \newline
 The input neurons are represented as array with its IDs counting the superpixel from left to right and bottom to top.
 
-\section{Encoding of Joint angles}\label{sec:EnOfJoint}
+\section{Encoding of Joint Angles}\label{sec:EnOfJoint}
 For some experiments the angle of some joints of the robot are used as an additional input for the neural network. Each joint angle is represented by two poisson neurons, one spiking proportional to the positive angle, one proportional to the negative angle. The angle $\beta$ is measured from the orientational axe of the module the joint is mounted on (module 1), which is shown in \autoref{fig:robAngle}
 
 \begin{figure}[htpb]
@@ -65,7 +65,7 @@ for the neuron signaling a positive angle and
 \end{equation}
 for the neuron signaling a negative angle. In the functions $a$ is the angle of the joint in degree and $c$ is a constant coefficient. This can be interpreted as the activity of neurons controlling the antagonist or respectively the agonist of a joint.
 
-\section{Output decoding}\label{sec:OutputDecoding}
+\section{Output Decoding}\label{sec:OutputDecoding}
 The output for the used network is as well represented by two neurons, one for signaling the intention to go right, one for going left. To access the total number of spikes occurred on the outputs, each is connected to a spike recorder which keeps track of the spike history.
 After each simulation step the number of spikes at the output is retrieved from its spike recorder and the spike recorder gets reset. From the difference in spike events the general direction is derived. This is then scaled by the mean number of spike events occurred on the nodes,which is shown in the following functions:
 \begin{equation}
@@ -84,7 +84,7 @@ where $N_r$ and $N_l$ are the total number of spikes for the right/left neuron, 
 \end{equation}
 Where $c_{imp}$ is a constant coefficient scaling how aggressive the direction can be changed. $D_t$ should always be in the range of $-1$ to $1$ as the robot has a finite steering range on which $D_t$ then gets projected.
 
-\section{Reward assignment}\label{sec:rewardAss}
+\section{Reward Assignment}\label{sec:rewardAss}
 For the network to learn a reward has to be given depending on its performance. There for finding a suitable reward function is crucial for successful training of the network.
 In this thesis the reward is defined through the angle to the target as shown in \autoref{eq:reward}.
 \begin{equation}\label{eq:reward}
@@ -116,6 +116,8 @@ r_h = \frac{ r_l * w_l + r_r * w_r} {max(|w_l|,|w_r|)*2}
 As the reward defined in \autoref{eq:reward} has the same value with opposing signing the last equation resolves to
 \begin{equation}\label{eq:rewardPSimp}
 r_h = \frac{ -r_r * w_l + r_r * w_r} {max(|w_l|,|w_r|)*2}
-r_h = \frac{ r_r *(w_r-w_l } {max(|w_l|,|w_r|)*2}
 \end{equation}
+\begin{equation*}
+  r_h = \frac{ r_r *(w_r-w_l) } {max(|w_l|,|w_r|)*2}
+\end{equation*}
 In this manner the reward for each neuron can be calculated.

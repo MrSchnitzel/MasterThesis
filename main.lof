@@ -39,11 +39,11 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces S\relax }}{25}{figure.caption.17}% 
+\contentsline {figure}{\numberline {\relax 4.1}{\ignorespaces Simple Network}}{25}{figure.caption.17}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Movement of weights while still learning \relax }}{28}{figure.caption.21}% 
+\contentsline {figure}{\numberline {\relax 4.2}{\ignorespaces Change of weights while still learning \relax }}{28}{figure.caption.21}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Movement of weights learning almost ended \relax }}{29}{figure.caption.22}% 
+\contentsline {figure}{\numberline {\relax 4.3}{\ignorespaces Change of weights at end of learning period \relax }}{29}{figure.caption.22}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 4.4}{\ignorespaces Complete plot of the reward \relax }}{30}{figure.caption.23}% 
 \defcounter {refsection}{0}\relax 
@@ -61,7 +61,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 4.11}{\ignorespaces Sketch of Network Topology for the Network with one hidden layer \relax }}{38}{figure.caption.32}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 4.12}{\ignorespaces Weights connecting the body output of SNN with one hidden Layer (training) \relax }}{39}{figure.caption.36}% 
+\contentsline {figure}{\numberline {\relax 4.12}{\ignorespaces Weights connecting the body output of SNN with the hidden Layer (training) \relax }}{39}{figure.caption.36}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 4.13}{\ignorespaces Performance of SNN with one hidden Layer (training) \relax }}{40}{figure.caption.37}% 
 \defcounter {refsection}{0}\relax 
@@ -71,18 +71,18 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Performance of the basic network in the test \relax }}{43}{figure.caption.40}% 
+\contentsline {figure}{\numberline {\relax 5.1}{\ignorespaces Schematic of the path of the ball in the test \relax }}{43}{figure.caption.40}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 5.2}{\ignorespaces Performance of the basic network in the test \relax }}{44}{figure.caption.41}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {\relax 5.3}{\ignorespaces Performance of the multilayer network with one hidden layer in the test \relax }}{44}{figure.caption.42}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Performance of the multilayer network with the split hidden layer in the test \relax }}{45}{figure.caption.43}% 
+\contentsline {figure}{\numberline {\relax 5.4}{\ignorespaces Performance of the multilayer network with split hidden layer in the test\relax }}{45}{figure.caption.43}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {\relax 7.1}{\ignorespaces Schematic for the path of the ball \relax }}{47}{figure.caption.44}% 
+\contentsline {figure}{\numberline {\relax A.1}{\ignorespaces Schematic for the path of the ball \relax }}{47}{figure.caption.44}% 
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }

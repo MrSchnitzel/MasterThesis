@@ -34,7 +34,6 @@ To explore how these networks act the neurophysiologist Warren McCulloch and the
   \caption[Schemata of McCulloch-Pitts-Model]{Schemata of a Synapse \cite{wikiSyn}}
   \label{fig:MCPShema}
 \end{figure}
-\newline
 \autoref{eq:MCP} describes the behaviour of the perceptron where x is a real-valued input vector, w the vector of the weights of the same size and b a bias. 
 \newline
 
@@ -54,7 +53,7 @@ By iterating over the set of training samples and updating the weights after eac
 \newline
 For this learning rule the bias is described by setting $x_0$ always to $1$ and have the feature set of size n represented by $x_1$ to xn. Doing so $w_0$ acts as bias for the threshold function and gets adjusted in the learning process.
 
-\section{Second generation of ANN}\label{sec:backprop}
+\section{Second Generation of ANN}\label{sec:backprop}
 To be able to solve non-linear classifiable data sets multiple perceptrons can be chained to form a network. This construct is referred as Multilayer Perceptron (MP) and consists of at least three layers, the input, hidden and output layer. Unlike a single perceptron the activation function of neurons in MPs are sigmoid shaped. Historically most common is the logistic function:
 \begin{equation}\label{eq:logisFunc}
   y_i(v_i) = (1 + e^{-v_i})^{-1}
@@ -145,7 +144,7 @@ $\tau_m$ is the membrane time constant inversely scaling the loss of voltage,  $
 
 with $w$ being the weight of the synapse connecting the neurons and $t_{syn}$ being the synaptic time constant.
 
-\subsection{Stdp learning}
+\subsection{STDP learning}
 The Hebbian rule was proposed by psychologist Donald Hebb in 1949 claiming that the connection from neuron \textbf{A} to neuron \textbf{B} should be strengthened if \textbf{A} consistently takes part in firing \textbf{B}. Which is often simplified to “Cells that fire together, wire together”. As the learning happens without influences it can be categorized as unsupervised learning.
 One shortcoming of the Hebbian rule is that it doesn’t cover depression of a connection as well as that to take part in the firing of a neuron the presynaptic neuron has to fire not at the same time but slightly before the postsynaptic neuron.
 Later experiments by Henry Markram suggested that the plasticity of a synapse is changed by exact timings of spikes in the pre- and postsynaptic membranes. If the presynaptic spike is followed by a postsynaptic one the connection is strengthened in the other case weakened.
@@ -225,7 +224,7 @@ For a better understanding it is helpful to keep in mind that in no point in tim
 The other examples are different scenes where either the camera was moved, resulting in the darker images, or the camera was static resulting in the bright images where white means that no event was detected for that pixel over the time period of accumulation.
 
 
-\subsection{Snake like Robot}
+\subsection{Snake-like Robot}
 The Robot used for the experiments tries to reassemble the shape and degrees of freedom a snake has. Unlike to a real snake, which can continuously curve its body, the robot has a modular design with rotational joints between the modules. The axes of the joints are rotated by 90º along the body axe enabling three dimensional movement with abundant degrees of freedom. This allows the robot to perform snake like movement patterns like slithering, climbing and sidewinding as well as rolling sidewards in an arch shaped body configuration, but various other movement patterns can also be thought of depending on environment. Examples for these different gaits are shown in \autoref{fig:snakeGaits} made by Jiang for a presentation\cite{snakeRobo}.
 \newline
 \begin{figure}[htpb]
@@ -234,11 +233,11 @@ The Robot used for the experiments tries to reassemble the shape and degrees of 
   \caption{Slide of Presentation by Jiang showing the different gaits of the robot\cite{snakeRobo}}
   \label{fig:snakeGaits}
 \end{figure}
-Snake like robots can navigate through tiny space like pipes and holes as well are also able to climb. That makes them especially interesting for the use in difficult terrain such as in rescue missions after earthquakes.
+Snake-like robots can navigate through tiny space like pipes and holes as well are also able to climb. That makes them especially interesting for the use in difficult terrain such as in rescue missions after earthquakes.
 For the experiments the slithering gait is used and the network only tells the robot in which direction it should go. In the slithering gait the robots head will move from one side to the other while keeping its orientation parallel to the movement direction. In this way it is able to sense the environment in front while moving. As a result of this movement pattern objects in front of the robot will change their position in sensing area throughout the motion.
 
-\subsection{Neuro Robotics Platform}
-The experiments done in this paper where simulated in the Neuro Robotics Platform (NRP) \cite{nrp} developed in the Human Brain Project \cite{hbp}. NRP enables the physical simulation of robots in environments as well as the integration of SNN to control the robots and thus gives the boilerplate to conduct experiments. Its core is a Closed Loop Engine (CLE) synchronizing the simulation of the SNN in NEST and the simulation of the world in ROS/Gazebo. To do so it pauses both simulations after a defined timespan and exchanges data between the simulations and updating their state. The interaction between the environment and the SNN is defined in Transfer Functions (TF) which for example set the target angles for each joint of the snake.
+\subsection{Neurorobotics Platform}
+The experiments done in this paper where simulated in the Neurorobotics Platform (NRP) \cite{nrp} developed in the Human Brain Project \cite{hbp}. NRP enables the physical simulation of robots in environments as well as the integration of SNN to control the robots and thus gives the boilerplate to conduct experiments. Its core is a Closed Loop Engine (CLE) synchronizing the simulation of the SNN in NEST and the simulation of the world in ROS/Gazebo. To do so it pauses both simulations after a defined timespan and exchanges data between the simulations and updating their state. The interaction between the environment and the SNN is defined in Transfer Functions (TF) which for example set the target angles for each joint of the snake.
 
 
 
