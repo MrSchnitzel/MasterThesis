@@ -25,11 +25,11 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.4.3}R-STDP}{9}{subsection.2.4.3}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.4}Dynamic Vision Sensor}{10}{subsection.2.4.4}% 
+\contentsline {section}{\numberline {2.5}Dynamic Vision Sensor}{10}{section.2.5}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.5}Snake-like Robot}{12}{subsection.2.4.5}% 
+\contentsline {section}{\numberline {2.6}Snake-like Robot}{12}{section.2.6}% 
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.4.6}Neurorobotics Platform}{14}{subsection.2.4.6}% 
+\contentsline {section}{\numberline {2.7}Neurorobotics Platform}{14}{section.2.7}% 
 \defcounter {refsection}{0}\relax 
 \contentsline {chapter}{\numberline {3}Methodology}{16}{chapter.3}% 
 \defcounter {refsection}{0}\relax 

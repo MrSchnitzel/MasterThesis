@@ -206,7 +206,7 @@ With $b$ being the baseline concentration of the neuromodulator. A visualisation
 
 In the experiments described in this thesis the Leaky Integrate-and-Fire Neuron will be used in combination of the R-STDP learning rule for synaptic weights to build spiking neural networks.
 
-\subsection{Dynamic Vision Sensor}
+\section{Dynamic Vision Sensor}
 While conventional cameras are getting better and better this is not particularly great for robotic and autonomous mobile applications. The reason is that newer cameras tend to have a higher resolution or refresh rate of their frames causing a higher data volume from the cameras. The data probably includes more information then cameras delivered a year ago but more data also means more work to do not only analysing it but also just by handling it. This leads to the consumption of more energy and waiting for processing to happen can be a hindrance for real time applications. Thus for robotic vision an optical system is needed, that reduces data load while keeping up the information flow from the real world to the system. The huge amount of data of cameras is structured in frames and the frames contain the information of their pixels. This way of capturing video data is called framebased. 
 Especially for tasks with fast moving objects a very high frame rate is needed. This leads to a huge amount of overhead as most pixels in each frame tend to have almost the same values in the next frame and thus the data for these pixels has no additional information. New information is only introduced if the value of a pixel changes meaningfully.
 \newline
@@ -224,7 +224,7 @@ For a better understanding it is helpful to keep in mind that in no point in tim
 The other examples are different scenes where either the camera was moved, resulting in the darker images, or the camera was static resulting in the bright images where white means that no event was detected for that pixel over the time period of accumulation.
 
 
-\subsection{Snake-like Robot}
+\section{Snake-like Robot}
 The Robot used for the experiments tries to reassemble the shape and degrees of freedom a snake has. Unlike to a real snake, which can continuously curve its body, the robot has a modular design with rotational joints between the modules. The axes of the joints are rotated by 90º along the body axe enabling three dimensional movement with abundant degrees of freedom. This allows the robot to perform snake like movement patterns like slithering, climbing and sidewinding as well as rolling sidewards in an arch shaped body configuration, but various other movement patterns can also be thought of depending on environment. Examples for these different gaits are shown in \autoref{fig:snakeGaits} made by Jiang for a presentation\cite{snakeRobo}.
 \newline
 \begin{figure}[htpb]
@@ -236,7 +236,7 @@ The Robot used for the experiments tries to reassemble the shape and degrees of 
 Snake-like robots can navigate through tiny space like pipes and holes as well are also able to climb. That makes them especially interesting for the use in difficult terrain such as in rescue missions after earthquakes.
 For the experiments the slithering gait is used and the network only tells the robot in which direction it should go. In the slithering gait the robots head will move from one side to the other while keeping its orientation parallel to the movement direction. In this way it is able to sense the environment in front while moving. As a result of this movement pattern objects in front of the robot will change their position in sensing area throughout the motion.
 
-\subsection{Neurorobotics Platform}
+\section{Neurorobotics Platform}
 The experiments done in this paper where simulated in the Neurorobotics Platform (NRP) \cite{nrp} developed in the Human Brain Project \cite{hbp}. NRP enables the physical simulation of robots in environments as well as the integration of SNN to control the robots and thus gives the boilerplate to conduct experiments. Its core is a Closed Loop Engine (CLE) synchronizing the simulation of the SNN in NEST and the simulation of the world in ROS/Gazebo. To do so it pauses both simulations after a defined timespan and exchanges data between the simulations and updating their state. The interaction between the environment and the SNN is defined in Transfer Functions (TF) which for example set the target angles for each joint of the snake.
 
 
