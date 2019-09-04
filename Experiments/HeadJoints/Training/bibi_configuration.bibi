@@ -6,7 +6,8 @@
     <file>AlphaSnake36.py</file>
     <populations population="actors" from="0" step="1" to="4" xsi:type="Range" />
     <populations population="sensors" from="4" step="1" to="14" xsi:type="Range" />
-    <populations population="record" from="0" step="1" to="14" xsi:type="Range" />
+    <populations population="joints" from="14" step="1" to="20" xsi:type="Range" />
+    <populations population="record" from="0" step="1" to="20" xsi:type="Range" />
   </brainModel>
   <bodyModel robotId="alphaS">AlphaSnake/model.sdf</bodyModel>
   <transferFunction src="csv_weights_Writer.py" xsi:type="PythonTransferFunction" />
@@ -15,6 +16,7 @@
   <transferFunction src="snake_control.py" xsi:type="PythonTransferFunction" />
   <transferFunction src="dvs2Brain.py" xsi:type="PythonTransferFunction" />
   <transferFunction src="brain2robo.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="joints2Brain.py" xsi:type="PythonTransferFunction" />
   <transferFunction src="spikeTrain_Monitor.py" xsi:type="PythonTransferFunction" />
   <transferFunction src="rewardTF.py" xsi:type="PythonTransferFunction" />
 </bibi>

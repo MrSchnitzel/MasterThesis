@@ -194,33 +194,21 @@ output_layer = output_layer_Body + output_layer_Head
 
 
 input_Head = input_dvs  # + input_jointsHead
-input_Body = input_dvs # input_Body = hidden_layer
+input_Body = input_dvs + output_layer_Head
+# input_Body = hidden_layer
 
 circuit = output_layer + input_dvs
 
 syn_con_dvsHead = nest.Connect(map(int, input_Head.all_cells),
                                map(int, output_layer_Head.all_cells),
                                syn_spec={'model': 'syn_Ouput_Head', 'weight': {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}, 'delay': 1.0})
-# syn_spec = {'model': 'syn_Ouput', 'weight': {'distribution': 'normal_clipped', 'low': 1., 'high': 400., 'mu': 200.0, 'sigma': 200.0}, 'delay': 1.0})
-#syn_spec = {'model': 'syn_Hidden', 'weight': 100., 'delay': 1.0})  # {'distribution': 'normal_clipped', 'low': 2., 'high': 400., 'mu': 50.0, 'sigma': 300.0}, 'delay': 1.0})
-# temp = map(int, hidden_layer.all_cells)
-# temp.reverse()
-# syn_con_inHidden = nest.Connect(map(int, input_hidden.all_cells),
-#                                 map(int, hidden_layer.all_cells),
-#                                 syn_spec={'model': 'syn_Hidden', 'weight':  {'distribution': 'uniform', 'low': 10., 'high': w0_max}, 'delay': 1.0})
-# syn_con_inHidden = nest.Connect(map(int, input_hidden.all_cells),
-#                                 map(int, hidden_layer_left.all_cells),
-#                                 syn_spec={'model': 'syn_Hidden', 'weight':  {'distribution': 'uniform', 'low': 10., 'high': w0_max}, 'delay': 1.0})
-#    {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}
 syn_con_right = nest.Connect(map(int, input_Body.all_cells),
                              map(int, output_layer_Body.all_cells[0:1]),
                              syn_spec={'model': 'syn_Ouput', 'weight':   {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}, 'delay': 1.0})  # {'distribution': 'normal', 'mu': 20300.0, 'sigma': 800.0}, 'delay': 1.0})
 syn_con_left = nest.Connect(map(int, input_Body.all_cells),
                             map(int, output_layer_Body.all_cells[1:2]),
                             syn_spec={'model': 'syn_Ouput', 'weight':   {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}, 'delay': 1.0})  # {'distribution': 'normal', 'mu': 300.0, 'sigma': 200.0}, 'delay': 1.0})
-#  syn_spec={'model': 'syn_Ouput', 'weight': {'distribution': 'normal', 'mu': 0.0, 'sigma': 300.0}, 'delay': 1.0})
 
-# hidden_layer = hidden_layer_right + hidden_layer_left
 
 nest.Connect(map(int, output_layer),
              map(int, spike_detector), "one_to_one")

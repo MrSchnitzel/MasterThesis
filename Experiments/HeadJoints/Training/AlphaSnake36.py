@@ -136,7 +136,7 @@ OUTPUT_PARAMS_Body = {
 output_layer_Body = sim.Population(2, sim.IF_cond_alpha, OUTPUT_PARAMS_Body)
 output_layer_Head = sim.Population(2, sim.IF_cond_alpha,  OUTPUT_PARAMS_Head)
 input_dvs = sim.Population(10, sim.IF_cond_alpha, INPUT_PARAMS)
-# input_jointsHead = sim.Population(3*2, sim.IF_cond_alpha, INPUT_PARAMS)
+input_jointsHead = sim.Population(3*2, sim.IF_cond_alpha, INPUT_PARAMS)
 # hidden_layer = sim.Population(8, sim.IF_cond_alpha, HIDDEN_PARAMS)
 # hidden_layer_right = sim.Population(6, sim.IF_cond_alpha, HIDDEN_PARAMS)
 # hidden_layer_left = sim.Population(6, sim.IF_cond_alpha, HIDDEN_PARAMS)
@@ -189,14 +189,15 @@ nest.CopyModel('stdp_dopamine_synapse', 'syn_Ouput_Head',
 #                 })
 
 
-# input_joints = input_jointsHead  # + input_jointsRest
+input_joints = input_jointsHead  # + input_jointsRest
 output_layer = output_layer_Body + output_layer_Head
 
 
 input_Head = input_dvs  # + input_jointsHead
-input_Body = input_dvs # input_Body = hidden_layer
+input_Body = output_layer_Head + input_joints
+# input_Body = hidden_layer
 
-circuit = output_layer + input_dvs
+circuit = output_layer + input_dvs + input_joints
 
 syn_con_dvsHead = nest.Connect(map(int, input_Head.all_cells),
                                map(int, output_layer_Head.all_cells),

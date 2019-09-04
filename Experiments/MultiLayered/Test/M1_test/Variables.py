@@ -18,7 +18,7 @@ dvsNumberOfY = 128 - dvsCutDOWN - dvsCutUP  # 96 #128
 
 BrainNumOfX = 5
 BrainNumOfY = 2
-numMonitorJoints = 0
+numMonitorJoints = 3
 
 globalRatio = ((float)(dvsNumberOfX*dvsNumberOfY)) / \
     (BrainNumOfX*BrainNumOfY)
@@ -40,7 +40,7 @@ maxDistance = 1.6
 deltaDistance = 0.051
 
 sphereRadius = 0.3
-initialPos = Point(RobotStart.x + maxDistance, 0., sphereRadius)
+initialPos = Point(RobotStart.x+maxDistance, 0., sphereRadius)
 
 m0 = Vector3(0.5, 0.0, 0.)  # 0.25, 0., 0.)
 
@@ -72,9 +72,8 @@ t6 = Vector3(1., 0., 0.)
 t7 = Vector3(1.5, -1.5, 0.)
 
 
-moveArray = [m0, m1, m2, m3, m4, m5, m6, m7,
-             m8, m9, m10, m12, m13, m14, m15, m16]
-# moveArray = [t0, t1, t2, t3, t4, t5, t6, t7]
+# [m0, m1, m2, m3, m4, m5, m6,m7, m8, m9, m10, m12, m13, m14, m15, m16]
+moveArray =[t0, t1, t2, t3, t4, t5, t6, t7]
 
 moveStraight = Vector3(0.50, 0., 0.)  # Vector3(1.0, 0., 0.)
 moveLeft = Vector3(3.0, 3., 0.)

@@ -122,18 +122,18 @@ conn_r = nest.GetConnections(target=[output_layer[0]])
 conn_l = nest.GetConnections(target=[output_layer[1]])
 
 #copy weights array from csv in variable
-weightsConL = [400.186831233, 2133.53446345, 521.212682388, -583.900182796, 862.990494895,
-               657.52834364, 1509.77488163, -97.1861018306, 124.097782963, 526.386304751]
-weightsConR = [625.83575506, -549.917791068, 605.593179725, 1895.08393048, 485.400743632,
-               19.9331389972, -302.00386247, 407.549865978, 464.988836902, -23.2978259665]
+# weightsConL = [400.186831233, 2133.53446345, 521.212682388, -583.900182796, 862.990494895,
+#                657.52834364, 1509.77488163, -97.1861018306, 124.097782963, 526.386304751]
+# weightsConR = [625.83575506, -549.917791068, 605.593179725, 1895.08393048, 485.400743632,
+#                19.9331389972, -302.00386247, 407.549865978, 464.988836902, -23.2978259665]
 #assign each connection corresponding weights
 #1!check nest doko how to assign weights
 
 # conn_hidden = conn_hidden_left + conn_hidden_right
-for i in range(len(weightsConL)):
-    w = weightsConL[i]
-    nest.SetStatus([conn_l[i]], {"weight": w})
+# for i in range(len(weightsConL)):
+#     w = weightsConL[i]
+#     nest.SetStatus([conn_l[i]], {"weight": w})
 
-for i in range(len(weightsConR)):
-    w = weightsConR[i]
-    nest.SetStatus([conn_r[i]], {"weight": w})
+# for i in range(len(weightsConR)):
+#     w = weightsConR[i]
+#     nest.SetStatus([conn_r[i]], {"weight": w})

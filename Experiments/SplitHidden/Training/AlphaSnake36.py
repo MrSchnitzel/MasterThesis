@@ -101,7 +101,7 @@ HIDDEN_PARAMS = {
     'v_thresh': -50.0,
     'v_reset': -65.0,
     'i_offset': 0.0,
-    }
+}
 
 OUTPUT_PARAMS = {
     'v_rest': -65.0,
@@ -115,7 +115,7 @@ OUTPUT_PARAMS = {
     'v_thresh': -50.0,
     'v_reset': -65.0,
     'i_offset': 0.0,
-    }
+}
 
 
 output_layer_Body = sim.Population(2, sim.IF_cond_alpha, OUTPUT_PARAMS)
@@ -142,7 +142,7 @@ spike_detector = nest.Create("spike_detector", 4, params={
 ############################
 nest.CopyModel('stdp_dopamine_synapse', 'syn_Ouput',
                {'Wmax': w_max,
-                'Wmin': 10.,
+                'Wmin': w_min,
                 'A_plus': 0.2,
                 'A_minus': -0.1,
                 'tau_c': 100.,
@@ -174,21 +174,20 @@ nest.CopyModel('stdp_dopamine_synapse', 'syn_Hidden',
 
 
 input_joints = input_jointsHead  # + input_jointsRest
-output_layer = output_layer_Body  + output_layer_Head
-
+output_layer = output_layer_Body + output_layer_Head
 
 
 input_Head = input_dvs  # + input_jointsHead
-input_hidden = output_layer_Head + input_joints 
+input_hidden = output_layer_Head + input_joints
 # input_Body = hidden_layer
 
 circuit = output_layer + hidden_layer_right + hidden_layer_left + \
-    input_dvs    + input_joints
+    input_dvs + input_joints
 
 syn_con_dvsHead = nest.Connect(map(int, input_Head.all_cells),
-                             map(int, output_layer_Head.all_cells),
+                               map(int, output_layer_Head.all_cells),
                                syn_spec={'model': 'syn_Ouput_Head', 'weight': {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}, 'delay': 1.0})
-                                # syn_spec = {'model': 'syn_Ouput', 'weight': {'distribution': 'normal_clipped', 'low': 1., 'high': 400., 'mu': 200.0, 'sigma': 200.0}, 'delay': 1.0})
+# syn_spec = {'model': 'syn_Ouput', 'weight': {'distribution': 'normal_clipped', 'low': 1., 'high': 400., 'mu': 200.0, 'sigma': 200.0}, 'delay': 1.0})
 #syn_spec = {'model': 'syn_Hidden', 'weight': 100., 'delay': 1.0})  # {'distribution': 'normal_clipped', 'low': 2., 'high': 400., 'mu': 50.0, 'sigma': 300.0}, 'delay': 1.0})
 # temp = map(int, hidden_layer.all_cells)
 # temp.reverse()
@@ -201,10 +200,10 @@ syn_con_inHidden = nest.Connect(map(int, input_hidden.all_cells),
 #    {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}
 syn_con_right = nest.Connect(map(int, hidden_layer_right.all_cells),
                              map(int, output_layer_Body.all_cells[0:1]),
-                             syn_spec={'model': 'syn_Ouput', 'weight':   {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}, 'delay': 1.0})#{'distribution': 'normal', 'mu': 20300.0, 'sigma': 800.0}, 'delay': 1.0})
+                             syn_spec={'model': 'syn_Ouput', 'weight':   {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}, 'delay': 1.0})  # {'distribution': 'normal', 'mu': 20300.0, 'sigma': 800.0}, 'delay': 1.0})
 syn_con_left = nest.Connect(map(int, hidden_layer_left.all_cells),
                             map(int, output_layer_Body.all_cells[1:2]),
-                             syn_spec={'model': 'syn_Ouput', 'weight':   {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}, 'delay': 1.0})#{'distribution': 'normal', 'mu': 300.0, 'sigma': 200.0}, 'delay': 1.0})
+                            syn_spec={'model': 'syn_Ouput', 'weight':   {'distribution': 'uniform', 'low': w0_min, 'high': w0_max}, 'delay': 1.0})  # {'distribution': 'normal', 'mu': 300.0, 'sigma': 200.0}, 'delay': 1.0})
 #  syn_spec={'model': 'syn_Ouput', 'weight': {'distribution': 'normal', 'mu': 0.0, 'sigma': 300.0}, 'delay': 1.0})
 
 hidden_layer = hidden_layer_right + hidden_layer_left
