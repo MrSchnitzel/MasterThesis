@@ -14,7 +14,6 @@ from matplotlib import style
 import csv
 import numpy as np
 import math
-import Variables as Var
 
 
 # style.use('seaborn-poster')
@@ -248,18 +247,8 @@ class ExperimentPlotter:
             if self.setRange and self.hardLim and len(line) > self.xRange:
                 line = line[-self.xRange:]
                 mT = tAr[-self.xRange:]
-            setPixel = False
-            if len(command) > 1:
-                setPixel = command[1] == 'p'
-            
+           
             label = ''
-            if setPixel:
-                if id > Var.numBrainNeurons:
-                    label = 'W {}'.format(id-Var.numBrainNeurons)
-                else:
-                    pixel = Var.idMapper(id)
-                    label = 'Px({},{})'.format(pixel.x,pixel.y)
-            else:
                 label = 'W {}'.format(id)
 
             pLine = ax.plot(mT, line, label=label)
