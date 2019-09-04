@@ -80,7 +80,7 @@ After each simulation step the number of spikes at the output is retrieved from 
 where $N_r$ and $N_l$ are the total number of spikes for the right/left neuron, $D_{norm}$ can be seen as the direction scaled by certainty, as its absolute value gets bigger the more exclusive the spikes occur on one neuron. By this interpretation of $D_{norm}$ representing the intention of changing the current direction $D_{t-1}$, the resulting direction $D_t$ is calculated by 
 \label{eg:OutputCalc}
 \begin{equation}
-  D_t = min(1,max(-1,( D_{t-1} + D_{norm} * c_{imp}))
+  D_t = min(1,max(-1,( D_{t-1} + D_{norm} * c_{imp})))
 \end{equation}
 Where $c_{imp}$ is a constant coefficient scaling how aggressive the direction can be changed. $D_t$ should always be in the range of $-1$ to $1$ as the robot has a finite steering range on which $D_t$ then gets projected.
 
