@@ -1,0 +1,24 @@
+<ExD 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+  xmlns="http://schemas.humanbrainproject.eu/SP10/2014/ExDConfig" xsi:schemaLocation="http://schemas.humanbrainproject.eu/SP10/2014/ExDConfig ../ExDConfFile.xsd">
+  <name>AlphaSnake base 2  with head output</name>
+  <thumbnail>settings/logo.png</thumbnail>
+  <description>slightly less neurones;twisted dopamine; 0 weighted start;</description>
+  <tags />
+  <timeout>36000</timeout>
+  <configuration type="user-interaction-settings" src="settings/UI-settings.uis" />
+  <configuration type="3d-settings" src="settings/3d-settings.ini" />
+  <maturity>production</maturity>
+  <environmentModel src="emptiness.sdf">
+    <robotPose robotId="alphaS" x="0.0" y="0.0" z="0.2" roll="0.0" pitch="-0.0" yaw="0.0" />
+  </environmentModel>
+  <bibiConf src="bibi_configuration.bibi" />
+  <experimentControl>
+    <stateMachine id="ballStateMachine" src="ballStateMachine.exd" xsi:type="SMACHStateMachine" />
+  </experimentControl>
+  <cameraPose>
+    <cameraPosition x="-1.5" y="0." z="2." />
+    <cameraLookAt x="0" y="0" z="0.49999" />
+  </cameraPose>
+  <cloneDate>2019-08-13T20:21:52</cloneDate>
+</ExD>

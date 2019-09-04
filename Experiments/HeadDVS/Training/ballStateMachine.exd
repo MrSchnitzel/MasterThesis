@@ -1,0 +1,397 @@
+#!/usr/bin/env python
+"""
+A state-machine that deletes, spawns and moves objects in the 3D scenes.
+"""
+import math
+import time
+import rospy
+import smach_ros
+import tf
+import sys
+import Variables as VAR
+from smach import StateMachine, Concurrence
+from smach import CBState
+from smach.state import State
+import smach
+import numpy as np
+from hbp_nrp_excontrol.nrp_states import WaitToClockState, \
+    RobotPoseMonitorState, SetMaterialColorServiceState, ClockDelayState, \
+    SpawnSphere, DestroyModel, SetModelPose
+# from hbp_nrp_excontrol.logs import clientLogger
+from geometry_msgs.msg import Pose, Point, Quaternion, Twist, Vector3
+from gazebo_msgs.srv import SetModelState, GetModelState
+from std_srvs.srv import Empty
+import std_msgs
+from gazebo_msgs.msg import ModelState
+import std_msgs
+
+__author__ = 'Richard Otto ///// Sven Liedtke (liedtke@in.tum.de)'
+
+reset_Sim = rospy.ServiceProxy('/gazebo/reset_simulation', Empty)
+set_model_state = rospy.ServiceProxy('/gazebo/set_model_state', SetModelState)
+get_model_state = rospy.ServiceProxy(
+    '/gazebo/get_model_state', GetModelState, persistent=True)
+logger = rospy.topics.Publisher(
+    '/log/smach_log', std_msgs.msg.String, queue_size=10)
+# clock = rospy.topics.Subscriber('/clock',std_msgs.msg.Time)
+
+FINISHED = 'FINISHED'
+ERROR = 'ERROR'
+PREEMPTED = 'PREEMPTED'
+
+SPAWN_BALL = 'SPAWN_BALL'
+RESET = 'RESET'
+TRANSLATE_OBJECT_MSG = 'TRANSLATE_OBJECT_MSG'
+
+sm = StateMachine(outcomes=[ERROR, PREEMPTED])
+sm.userdata.stepCounter = 0
+sm.userdata.roundCounter = 0
+sm.userdata.aim = Vector3(0., 0., 0.)
+sm.userdata.inverted = False
+
+
+def resetSim_cb():
+    @smach.cb_interface(input_keys=['roundCounter', 'aim', 'inverted'], output_keys=['roundCounter', 'stepCounter', 'inverted'],
+                        outcomes=['succeeded'])
+    def resetSim(userdata):
+        time, robot, target = VAR.getTimeAndPosition()
+        state = VAR.Reset_smachState(time, userdata.roundCounter,
+                                     robot, target, userdata.aim, userdata.inverted)
+        logString = state.getLog()
+        logger.publish(std_msgs.msg.String(logString))
+
+        userdata.roundCounter = userdata.roundCounter + 1
+        userdata.stepCounter = 0
+        userdata.inverted = (-1)**(userdata.roundCounter) < 0
+        move_object_cb(VAR.robotName, VAR.RobotStart, Quaternion())(userdata)
+        # reset_Sim()
+        return 'succeeded'
+
+    return resetSim
+
+
+def move_object_cb(name, pointPosition, qOrientation=Quaternion(0, 0, 0, 0)):
+    @smach.cb_interface(input_keys=[], output_keys=[],
+                        outcomes=['succeeded', 'aborted'])
+    def move_object(userdata):
+        msg = ModelState()
+
+        msg.model_name = name
+        msg.scale = Vector3(1, 1, 1)
+        msg.pose.position = pointPosition
+        msg.pose.orientation = qOrientation
+        msg.reference_frame = 'world'
+
+        # call service
+        response = set_model_state(msg)
+
+        if not response.success:
+            return 'aborted'
+        return 'succeeded'
+
+    return move_object
+
+
+def notify_user_cb(msg):
+    @smach.cb_interface(input_keys=[], output_keys=[], outcomes=['succeeded'])
+    def notify_user(userdata):
+        # if VAR.ENBLE_LOGGING:
+        #     clientLogger.advertise(msg)
+        #     clientLogger.info(msg)
+        return 'succeeded'
+
+    return notify_user
+
+
+def logDelTarget_cb():
+    @smach.cb_interface(input_keys=['roundCounter'], output_keys=[], outcomes=['succeeded'])
+    def logDelTarget(userdata):
+        time, robot, target = VAR.getTimeAndPosition()
+        state = VAR.DelTarget_smachState(time, userdata.roundCounter,
+                                         robot, target)
+        logString = state.getLog()
+        logger.publish(std_msgs.msg.String(logString))
+        return 'succeeded'
+
+    return logDelTarget
+
+
+def logSpawnTarget_cb():
+    @smach.cb_interface(input_keys=['roundCounter'], output_keys=[], outcomes=['succeeded'])
+    def logSpawnTarget(userdata):
+        time, robot, target = VAR.getTimeAndPosition()
+        state = VAR.SpawnTarget_smachState(time, userdata.roundCounter,
+                                           robot, target)
+        logString = state.getLog()
+        logger.publish(std_msgs.msg.String(logString))
+        rospy.sleep(0.4)
+        return 'succeeded'
+
+    return logSpawnTarget
+
+
+class MoveAlongPath(smach.State):
+    def __init__(self, model, movePattern, size):
+        smach.State.__init__(self, input_keys=['stepCounter', 'roundCounter', 'aim', 'inverted'],  # ,'moveRoundCounter'],
+                             # ,'moveRoundCounter'],
+                             output_keys=['stepCounter',
+                                          'roundCounter', 'aim', 'inverted'],
+                             outcomes=['succeeded', 'ongoing', 'restart', 'preempted'])
+        self.model = model
+        self.movePattern = movePattern
+        self.stSize = size
+        self._rate = rospy.Rate(100)
+        
+
+    def execute(self, userdata):
+
+        notify_user_cb('Inverting Path: '+str(userdata.inverted))(userdata)
+        # r = get_model_state(model_name=VAR.robotName)
+        # rp = r.pose.position
+        # ro = r.pose.orientation
+        # dT = [self.directionTo.x, self.directionTo.y, VAR.sphereRadius, 0.]
+        # # qRobot = list(tf.transformations.quaternion_inverse([ro.x, ro.y, ro.z, ro.w]))
+        # qRobot = list([ro.x, ro.y, ro.z, ro.w])
+        # qRobotConj = tf.transformations.quaternion_conjugate(qRobot)
+        # aimDirection = tf.transformations.quaternion_multiply(
+        #     tf.transformations.quaternion_multiply(qRobot, dT),
+        #     qRobotConj)
+        # aimDirection = Vector3(
+        #     aimDirection[0], aimDirection[1], aimDirection[2])
+        # aim = Vector3(aimDirection.x + pointFrom.x, aimDirection.y +
+        #               pointFrom.y, aimDirection.z + pointFrom.z)
+
+        # direction = aimDirection
+        factor = 1.
+        if userdata.inverted:
+            factor = -1.
+
+        for i in range(len(self.movePattern)):
+          self._rate.sleep()
+          modelState = get_model_state(model_name=self.model)
+          pointFrom = modelState.pose.position
+          direction = Vector3(self.movePattern[i].x, factor *
+                              self.movePattern[i].y, self.movePattern[i].z)
+          userdata.aim = Vector3(
+              pointFrom.x + direction.x, pointFrom.y + direction.y, pointFrom.z + direction.z)
+          
+          lastPos = pointFrom
+          newPos = pointFrom
+          time, robot, target = VAR.getTimeAndPosition()
+          state = VAR.TargetStartMoving_smachState(time, userdata.roundCounter,
+                                                  robot, target, userdata.aim, userdata.inverted)
+          logString = state.getLog()
+          logger.publish(std_msgs.msg.String(logString))
+
+          dire = np.array([float(direction.x),float(direction.y),float(direction.z)])
+          length = np.linalg.norm(dire)
+          numOfSteps = float(math.ceil(length / self.stSize))
+          
+          direction = Vector3(direction.x / numOfSteps, direction.y / numOfSteps, direction.z / numOfSteps)
+          
+          # start_time = rospy.get_rostime()
+          waiting = False
+          while True:
+              if self.preempt_requested():
+                  self.service_preempt()
+                  return 'preempted'
+              try:
+                  self._rate.sleep()
+                  modelState = get_model_state(model_name=self.model)
+                  currentPos = modelState.pose.position
+                  rp = get_model_state(model_name=VAR.robotName).pose.position
+                  distanceRB = math.sqrt(
+                      (currentPos.x-rp.x)**2+(currentPos.y-rp.y)**2)
+
+                #   step = self.stSize * userdata.stepCounter
+                  if((not waiting) and distanceRB < VAR.maxDistance) or (waiting and (distanceRB < (VAR.maxDistance - VAR.deltaDistance))):
+                      if waiting:
+                          notify_user_cb('Robot close again. Step: ' +
+                                        str(userdata.stepCounter))(userdata)
+
+                          time, robot, target = VAR.getTimeAndPosition()
+                          state = VAR.TargetResuming_smachState(time, userdata.roundCounter,
+                                                                robot, target, userdata.stepCounter)
+                          logString = state.getLog()
+                          logger.publish(std_msgs.msg.String(logString))
+
+                          waiting = False
+
+                      #destination for step
+                      newPos = Point(lastPos.x + direction.x,
+                      lastPos.y + direction.y,
+                      VAR.sphereRadius)
+                      move_object_cb(self.model, newPos)(userdata)
+                      lastPos = newPos
+                      if userdata.stepCounter is 0:
+                          target = Point(pointFrom.x + direction.x,
+                                        pointFrom.y + direction.y,
+                                        VAR.sphereRadius)
+                          time, robot, target = VAR.getTimeAndPosition()
+                          state = VAR.TargetStartMoving_smachState(time, userdata.roundCounter,
+                                                                  robot, target, userdata.aim, userdata.inverted)
+                          logString = state.getLog()
+                          logger.publish(std_msgs.msg.String(logString))
+                          notify_user_cb(str(pointFrom))(userdata)
+                          notify_user_cb('moving to new Point:\n' +
+                                        str(target))(userdata)
+
+                      # math.fabs(1 / self.stSize)):
+                      if (userdata.stepCounter < numOfSteps):
+                          userdata.stepCounter = userdata.stepCounter + 1
+                          if(userdata.stepCounter % 200 is 0):
+                              time, robot, target = VAR.getTimeAndPosition()
+                              state = VAR.TargetMoving_smachState(time, userdata.roundCounter,
+                                                                  robot, target, userdata.stepCounter)
+                              logString = state.getLog()
+                              logger.publish(std_msgs.msg.String(logString))
+
+                      else:
+                          ## Robot should be at least 0.5 deltaDistanc to the target
+                          if distanceRB < VAR.maxDistance - 0.5*VAR.deltaDistance:
+                              userdata.stepCounter = 0
+                              # if userdata.moveRoundCounter > 3:
+                              #     userdata.moveRoundCounter = 0
+                              #     return 'reset'
+                              # userdata.moveRoundCounter = userdata.moveRoundCounter + 1
+
+                              time, robot, target = VAR.getTimeAndPosition()
+                              state = VAR.TargetAtDestination_smachState(time, userdata.roundCounter,
+                                                                        robot, target)
+                              logString = state.getLog()
+                              logger.publish(std_msgs.msg.String(logString))
+
+                              break
+                  else:
+                      # if not waiting:
+                      time, robot, target = VAR.getTimeAndPosition()
+                      if time.to_sec() % 2 <= 0.5:
+                          state = VAR.TargetWaiting_smachState(time, userdata.roundCounter,
+                                                              robot, target, userdata.stepCounter)
+                          logString = state.getLog()
+                          logger.publish(std_msgs.msg.String(logString))
+                          notify_user_cb('distance to big: '+str(distanceRB) +
+                                        '; in Step: '+str(userdata.stepCounter))(userdata)
+                      waiting = True
+                      rospy.sleep(0.5)
+              except:
+                  notify_user_cb(
+                      "---------------------Error---------------------")(userdata)
+                  notify_user_cb("Error Catched: " +
+                                str(sys.exc_info()))(userdata)
+                  return 'restart'
+        return 'succeeded'
+        
+
+
+
+
+# gets called when ANY child state terminates
+def child_term_cb(outcome_map):
+    # terminate all running states if FOO finished with outcome 'outcome3'
+    if outcome_map['TERMINATOR']:  # == 'restart':
+        return True
+
+    # terminate all running states if BAR finished
+    if outcome_map['MOVING']:
+        return True
+
+    # in all other case, just keep running, don't terminate anything
+    return False
+
+
+def monitor_cb(userdata, msg):
+    return False
+
+
+with sm:
+    StateMachine.add(SPAWN_BALL,
+                     SpawnSphere(model_name=VAR.targetName,
+                                 radius=VAR.sphereRadius,
+                                 position=VAR.initialPos, gravity_factor=0),
+                     transitions={'succeeded': "logSpawnTarget", 'aborted': ERROR,
+                                  'preempted': PREEMPTED})
+    StateMachine.add('logSpawnTarget',
+                     CBState(logSpawnTarget_cb()),
+                     transitions={'succeeded': "CONCURRENT"})
+    # gets called when ALL child states are terminated
+    # def out_cb(outcome_map):
+    #     clientLogger.info('out_cb: ', outcome_map)
+    #     if outcome_map['MOVING'] == 'finished':
+    #         return 'succeeded'
+    #     else:
+    #         return 'restart'
+
+    sm_concurrent = smach.Concurrence(outcomes=['succeeded', 'restart'],
+                                      default_outcome='restart',
+                                      input_keys=[
+        'stepCounter', 'roundCounter', 'aim', 'inverted'],
+        output_keys=[
+        'stepCounter', 'roundCounter', 'aim', 'inverted'],
+        child_termination_cb=child_term_cb)
+
+    # outcome_map={'succeeded': {'MOVING': 'finished'},
+    #                 'restart': {'TERMINATOR': 'restart'}},
+    with sm_concurrent:
+        sm_termi = smach.StateMachine(outcomes=['restart'])
+        with sm_termi:
+            StateMachine.add('TERMI', smach_ros.MonitorState(
+                "/robot/terminate_flag", std_msgs.msg.Bool, monitor_cb),
+                transitions={
+                'valid': 'TERMI',
+                'invalid': 'restart',
+                'preempted': 'restart'
+            })
+
+        Concurrence.add("TERMINATOR", sm_termi)
+
+        sm_moving = smach.StateMachine(outcomes=['restart', 'finished'],
+                                       output_keys=[
+                                           'stepCounter', 'roundCounter', 'aim', 'inverted'],
+                                       input_keys=[
+                                           'stepCounter', 'roundCounter', 'aim', 'inverted'],
+                                       )
+        
+        with sm_moving:
+            StateMachine.add("MOVE",
+                             MoveAlongPath(VAR.targetName,
+                                           VAR.moveArray, VAR.stepSize),
+                             #    VAR.moveStraight, VAR.stepSize),
+                             transitions={'preempted': 'restart', 'restart': "restart", 'succeeded': "finished",
+                                          'ongoing': "MOVE"})
+            # StateMachine.add("FIVETH_MOVE",
+            #                  MoveAlongPath(VAR.targetName,
+            #                                VAR.moveTightRight, VAR.stepSize),
+            #                  transitions={'preempted': 'restart', 'restart': "restart", 'succeeded': 'finished',
+            #                               'ongoing': "FIVETH_MOVE"})
+            # StateMachine.add("ROUND_COUNTER")
+        Concurrence.add('MOVING', sm_moving,
+                        remapping={'restart': 'restart',
+                                   'finished': 'succeeded'})
+
+    StateMachine.add("CONCURRENT", sm_concurrent,
+                     transitions={'succeeded': 'logDelTarget',  # todo,
+                                  'restart': 'logDelTarget'})
+
+    # StateMachine.add('TERMI', smach_ros.MonitorState(
+    #                 "/robot/terminate_flag", std_msgs.msg.Bool, monitor_cb),
+    #                 transitions={
+    #                     'valid':
+    #                     'invalid': 'wait4',
+    #                     'preempted': 'wait4'
+    #                 })
+    StateMachine.add('logDelTarget',
+                     CBState(logDelTarget_cb()),
+                     transitions={'succeeded': "REMOVE_TARGET"})
+    StateMachine.add('REMOVE_TARGET',
+                     DestroyModel(VAR.targetName),
+                     transitions={'succeeded': 'wait4',
+                                  'preempted': PREEMPTED,
+                                  'aborted': ERROR})
+    StateMachine.add('wait4',
+                     ClockDelayState(0.2),
+                     transitions={'valid': 'bierset', 'invalid': 'bierset',
+                                  'preempted': 'bierset'})
+    StateMachine.add('bierset',
+                     CBState(resetSim_cb()),
+                     transitions={'succeeded': SPAWN_BALL})

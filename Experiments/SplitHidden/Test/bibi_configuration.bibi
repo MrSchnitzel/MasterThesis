@@ -1,0 +1,23 @@
+<bibi 
+  xmlns="http://schemas.humanbrainproject.eu/SP10/2014/BIBI" 
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <timestep>20</timestep>
+  <brainModel>
+    <file>AlphaSnake36.py</file>
+    <populations population="actors" from="0" step="1" to="4" xsi:type="Range" />
+    <populations population="hidden" from="4" step="1" to="12" xsi:type="Range" />
+    <populations population="sensors" from="12" step="1" to="22" xsi:type="Range" />
+    <populations population="joints" from="22" step="1" to="28" xsi:type="Range" />
+    <populations population="record" from="0" step="1" to="28" xsi:type="Range" />
+  </brainModel>
+  <bodyModel robotId="alphaS">AlphaSnake/model.sdf</bodyModel>
+  <transferFunction src="stateLogger.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="csv_weights_Writer.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="brain2robo.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="snake_control.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="joints2Brain.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="dvs2Brain.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="spikeTrain_Monitor.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="renderDvs.py" xsi:type="PythonTransferFunction" />
+  <transferFunction src="rewardTF.py" xsi:type="PythonTransferFunction" />
+</bibi>
